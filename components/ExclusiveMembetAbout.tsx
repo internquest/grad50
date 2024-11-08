@@ -15,7 +15,7 @@ const ExclusiveMembetAbout = (props: Props) => {
               <div
                 style={{ "--d": "3s" } as any}
                 className=" animate-pulse-start absolute top-[calc(10%-10px)] right-[calc(10%-3px)]"
-                // className="animate-pulse-start  absolute md:right-[calc(10%-10px)] top-0 md:top-[calc(50% - 25px)]"
+              // className="animate-pulse-start  absolute md:right-[calc(10%-10px)] top-0 md:top-[calc(50% - 25px)]"
               >
                 <Image
                   src={yello}
@@ -26,7 +26,7 @@ const ExclusiveMembetAbout = (props: Props) => {
                 />
               </div>
 
-              <h1 className="font-cabiet-black text-[100px] leading-[120px] text-center text-[#462B34E5]">
+              <h1 className="font-cabiet-black text-[70px] md:text-[100px] leading-[120px] text-center text-[#462B34E5]">
                 Grad50
               </h1>
 

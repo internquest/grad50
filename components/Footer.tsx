@@ -17,10 +17,10 @@ const Footer = (props: Props) => {
     <div className="relative my-10 z-0">
       {/* there is another dive to applied here */}
       <div className="my-10 flex flex-col gap-5 px-10 font-WhyteInktrap-regular md:hidden">
-        <FootarCard heading=" I&apos;m a Job Seeker, Let&apos;s work together!" className="bg-custom-green"/>
-        <FootarCard subheading="Open access for overseas companies" heading=" I&apos;m an Employer, Let's talk business!" className="bg-custom-blue"/>
-        
-       </div>
+        <FootarCard heading=" I&apos;m a Job Seeker, Let&apos;s work together!" className="bg-custom-green" />
+        <FootarCard subheading="Open access for overseas companies" heading=" I&apos;m an Employer, Let's talk business!" className="bg-custom-blue" />
+
+      </div>
       {/* this above  */}
       <div className="footer relative mx-auto my-0 mt-10 h-full w-[95vw] max-w-[1800px] rounded-[30px] border-2 border-primary-brown pb-2 pt-10 font-WhyteInktrap-regular md:mt-60 md:pt-20 xl:h-[488px]">
         <div className="absolute -top-40  left-0 right-0 z-10 hidden  flex-col items-center justify-center gap-5 md:flex lg:-top-40 lg:flex-row lg:gap-20      ">
@@ -194,7 +194,7 @@ const Footer = (props: Props) => {
             </p>
           </div>
         </div>
-        <div className="m-auto mt-0 flex max-w-min items-start gap-x-2 px-6 pt-6 sm:mt-5 md:items-start md:gap-x-12 md:px-4 lg:max-w-[1200px] xl:max-w-[1200px] xl:gap-16 2xl:max-w-[85%]">
+        <div className="m-auto mt-0 flex max-w-min items-start gap-x-2 px-2 pt-6 sm:mt-5 md:items-start md:gap-x-12 md:px-4 lg:max-w-[1200px] xl:max-w-[1200px] xl:gap-16 2xl:max-w-[85%]">
           <div className="lg:block hidden  basis-[300px]">
             <div className="">
               <Image
@@ -242,13 +242,13 @@ const Footer = (props: Props) => {
             </Link>
             <Link href={"/contact-us"}>
               {" "}
-              <p className="font-WhyteInktrap-regular text-lg hover:opacity-70">
+              <p className="font-WhyteInktrap-regular whitespace-nowrap text-lg hover:opacity-70">
                 Contaact us
               </p>
             </Link>
             <Link href={"/about-us"}>
               {" "}
-              <p className="font-WhyteInktrap-regular text-lg hover:opacity-70">
+              <p className="font-WhyteInktrap-regular whitespace-nowrap text-lg hover:opacity-70">
                 About Hyring
               </p>
             </Link>

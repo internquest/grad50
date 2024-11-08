@@ -38,7 +38,7 @@ let marqueeItems = [
 
 const MainMarquee = (props: Props) => {
   return (
-    <div className="w-screen">
+    <div className="w-screen my-4">
       <div className="mx-auto h-[71px] min-w-full  -rotate-3 border border-primary-brown bg-primary-brown ">
         <div
           className="py-4 overflow-hidden flex flex-row relative w-full 

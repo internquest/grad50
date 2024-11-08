@@ -57,14 +57,13 @@ const PromiseMainComponent = (props: Props) => {
         Our Promises
       </div>
 
-      <div className="w-full  flex min-h-[500px]   overflow-hidden  justify-center ">
-        <div className="max-w-screen-lg relative h-full flex basis-3/5  left-0 w-full">
+      <div className="w-full  flex min-h-[500px] flex-col md:flex-row  md:overflow-hidden  justify-center ">
+        <div className="max-w-screen-lg relative h-[350px] flex basis-auto md:basis-[1/2] lg:basis-3/5  left-0 w-full">
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`w-full absolute top-10 inset-0 h-full transition-opacity duration-500 ${
-                index === activeIndex ? "opacity-100" : "opacity-0"
-              }`}
+              className={`w-full absolute top-10 inset-0  h-full transition-opacity duration-500 ${index === activeIndex ? "opacity-100" : "opacity-0"
+                }`}
               style={{
                 pointerEvents: index === activeIndex ? "auto" : "none",
               }}
@@ -80,7 +79,7 @@ const PromiseMainComponent = (props: Props) => {
           ))}
         </div>
 
-        <div className="  w-full   relative h-full basis-2/5  ">
+        <div className="  w-full mx-5  relative h-full basis-auto md:basis-[1/2] lg:basis-2/5  ">
           <ul
             className="slick-dots last:slick slick-thumb"
             style={{ display: "block" }}
@@ -88,9 +87,8 @@ const PromiseMainComponent = (props: Props) => {
             {slides.map((slide, index) => (
               <li
                 key={index}
-                className={`${
-                  index === activeIndex ? "slick-active " : ""
-                } flex justify-between my-10 `}
+                className={`${index === activeIndex ? "slick-active " : ""
+                  } flex justify-between my-10 `}
               >
                 <div className="flex gap-5 xl3:gap-7">
                   <div
@@ -98,12 +96,11 @@ const PromiseMainComponent = (props: Props) => {
                     className="undefined cursor-pointer relative"
                   >
                     <div
-                      className={` ${
-                        index !== slides.length - 1
-                          ? "before:border-dashed"
-                          : "before:border-none"
-                      } before:content-[''] z-30 
-                       before:w-[20px] before:left-[35px]
+                      className={` ${index !== slides.length - 1
+                        ? "before:border-dashed"
+                        : "before:border-none"
+                        } before:content-[''] z-30 
+                       before:w-[0px] before:h-[40px] before:top-[35px] before:left-[15px]
                         md:before:w-0 
                         md:before:h-[65px] 
                         before:border
@@ -127,20 +124,18 @@ const PromiseMainComponent = (props: Props) => {
                                    flex 
                                    justify-center 
                                    items-center
-                                   ${index ===activeIndex && index ===0 ?`bg-[#b6eccc]`:''}
-                                    relative  ${
-                                      index === activeIndex
-                                        ? `${slide.className}`
-                                        : "bg-[#FFF9F3]"
-                                    } ${
-                        index !== slides.length - 1
+                                   ${index === activeIndex && index === 0 ? `bg-[#b6eccc]` : ''}
+                                    relative  ${index === activeIndex
+                          ? `${slide.className}`
+                          : "bg-[#FFF9F3]"
+                        } ${index !== slides.length - 1
                           ? "before:border-dashed"
                           : ""
-                      }`}
+                        }`}
                     >
                       {index + 1}
                     </div>
-                   
+
 
 
                     <div
@@ -149,11 +144,10 @@ const PromiseMainComponent = (props: Props) => {
                     ></div>
                   </div>
                   <div
-                    className={`${
-                      index === activeIndex
-                        ? "font-WhyteInktrap-medium font-semibold text-primary-brown"
-                        : ""
-                    } mt-1.5 hidden whitespace-nowrap text-left font-primary text-base transition duration-1000 md:block lg:mt-3 lg:text-lg xl:text-xl xl3:mt-3.5 xl3:text-2xl xl4:mt-51`}
+                    className={`${index === activeIndex
+                      ? "font-WhyteInktrap-medium font-semibold text-primary-brown"
+                      : ""
+                      } mt-1.5  whitespace-nowrap text-left font-primary text-base transition duration-1000 md:block lg:mt-3 lg:text-lg xl:text-xl xl3:mt-3.5 xl3:text-2xl xl4:mt-51`}
                   >
                     {slide.title}
                   </div>

@@ -43,20 +43,20 @@ let marqueeItems = [
 const page = (props: Props) => {
   return (
     <div className="w-full  overflow-hidden  h-full text-primary-brown relative flex flex-col gap-10   ">
-      <div className="mx-auto flex flex-col gap-20 my-0 w-full max-w-[1800px]">
+      <div className="mx-auto flex flex-col gap-6 md:gap-20 my-0 w-full max-w-[1800px]">
         <div className="flex w-full justify-center flex-col items-center gap-5">
-          <div className="max-w-screen-lg justify-center px-1 sm:px-3 flex flex-col items-center gap-5 w-full">  
+          <div className="max-w-screen-lg justify-center px-1 sm:px-3 flex flex-col items-center gap-5 w-full">
 
-          <div className="mt-5 text-center font-cabiet-r  font-[700] text-[40px]  lg:mt-[40px] lg:text-[58px]  ">
-            <h1 className="font-cabiet-b text-[40px] leading-[50px] tracking-[-1%] text-center">
-              Grad50 - where extraordinary opportunities meet exceptional talent{" "}
-            </h1>
-          </div>
-          <p className="  text-center font-generalsans-r  text-2xl leading-[62px] font-[500] md:w-4/5 text-[#462B34CC] lg:text-[28px] lg:font-normal ">
-            Embark on a journey of unparalleled opportunities being a part of
-            Grad50, where we redefine what's possible for the dreamers, the
-            achievers, and the top 1% students
-          </p>
+            <div className="mt-5 text-center font-cabiet-r  font-[700] text-[40px]  lg:mt-[40px] lg:text-[58px]  ">
+              <h1 className="font-cabiet-b text-[40px] leading-[50px] tracking-[-1%] text-center">
+                Grad50 - where extraordinary opportunities meet exceptional talent{" "}
+              </h1>
+            </div>
+            <p className="  text-center font-generalsans-r  text-2xl leading-[40px] md:leading-[62px] font-[500] md:w-4/5 text-[#462B34CC] lg:text-[28px] lg:font-normal ">
+              Embark on a journey of unparalleled opportunities being a part of
+              Grad50, where we redefine what's possible for the dreamers, the
+              achievers, and the top 1% students
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-5 w-full h-full relative justify-center ">
@@ -73,7 +73,7 @@ const page = (props: Props) => {
               {/* <div className="flex flex-col w-full bg-white"> */}
 
               <div className="w-full  rounded-[9px] border-2 border-primary-brown   relative  ">
-                <div className="border-3     w-full  h-full  bg-white   rounded-[9px] border-primary-brown  flex flex-col pl-3 lg:pl-10 relative z-10 ">
+                <div className="border-3   p-2  w-full  h-full  bg-white   rounded-[9px] border-primary-brown  flex flex-col md:pl-3 lg:pl-10 relative z-10 ">
                   <StarText text="Shipped projects with high adoption" />
                   <StarText text="Won awards, hackathons, competitions or scholarships" />
                   <StarText text="Built communities/ large audience on social media platforms" />
@@ -83,7 +83,7 @@ const page = (props: Props) => {
                 </div>
 
                 <div className="w-full h-full lg:h-full  rounded-[9px] bg-primary-brown border-3 border-white  top-2 left-[10px] -z-10  absolute  "></div>
-              {/* </div> */}
+                {/* </div> */}
               </div>
             </div>
 
@@ -212,7 +212,7 @@ at least one internship experience or strong leadership skills to apply"
               <h1 className="font-cabiet-r font-[500] text-[32px] leading-[40px] text-[#000000]">
                 Subscribe to ascend the ladder of success
               </h1>
-              <div className="w-full flex flex-col gap-10 lg:flex-row justify-center items-center">
+              <div className="w-full flex flex-col gap-10 md:flex-row justify-center items-center">
                 <ScholarShipCard
                   buttonText="subscribe"
                   sidebarImaage={image90}

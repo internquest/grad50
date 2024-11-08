@@ -1,5 +1,5 @@
 'use client'
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import PromiseComponent from '@/components/PromiseComponent';
 import PricingCard from '@/components/PricingCard';
 import pricesvg from '@/public/priceingsvg.svg';
@@ -46,11 +46,11 @@ const Hero = (props: Props) => {
 
   return (
     <div className="mt-3  max-w-[100vw] w-full md:mt-20 z-0 ">
-      <div className="mx-auto mb-20 w-full max-w-[92vw]">
+      <div className="mx-auto  mb-3 md:mb-20 w-full max-w-[92vw]">
         <div className="mx-auto my-0 flex max-w-[1800px] flex-col lg:flex-row">
           <div className="basis-3/5 ">
             <h1 className="text-center text-primary-brown   font-WhyteInktrap-medium text-4xl lg:whitespace-nowrap lg:text-start  lg:text-[44px] xl:text-5xl 2xl:text-6xl">
-              Meet The New Gold Standard
+              Meet The New Gold Standard{' '}
               <br className="hidden lg:block" />
               <span>In </span>
               <span className="text-secondary-orange">Contract Hyring</span>
@@ -58,7 +58,7 @@ const Hero = (props: Props) => {
             <div className="mb-8  mt-5 text-center font-WhyteInktrap-regular text-xl  font-normal lg:mb-[60px] lg:mt-[40px] lg:text-start lg:text-3xl">
               Hire from a pool of
               <p className="relative mx-2 inline-block lg:mx-3">
-                <span className="absolute -left-[22px] -top-4 scale-[0.7] lg:-left-1 lg:-top-3 lg:scale-[1]  ">
+                <span className="absolute -left-[4px] inset-0 -top-1 scale-[1.1] lg:-left-1 lg:-top-3 lg:scale-[1]  ">
                   <Image
                     src={circle}
                     width={100}
@@ -94,9 +94,10 @@ const Hero = (props: Props) => {
               <Image
                 src={arrow}
                 width={100}
-                className="w-fit h-fit"
+                className="w-fit h-fit mr-20  my-3 rotate-90 lg:rotate-0"
                 height={100}
                 alt={"image"}
+
               />
               <div className="flex items-center gap-4 whitespace-nowrap">
                 <div className="h-fit undefined w-fit cursor-pointer     relative  ">
@@ -141,7 +142,7 @@ const Hero = (props: Props) => {
               </div>
             </div>
             <div className="max-lg:hidden lg:block   justify-center my-4 lg:max-w-[650px] xl:max-w-[860px] 2xl:max-w-[860px]">
-              {/* <div className="md:hidden lg:block flex justify-center my-4 lg:max-w-[650px] xl:max-w-[860px] 2xl:max-w-[860px]"> */}
+              {/* <div className="md:hidden lg:block flex justify-center my-4 lg:max-w-[650px] xl:max-w-[860px] 2xl:max-w--360px]"> */}
               <div className="sm:grid  w-full sm:grid-cols-2 items-start  ">
                 <div className="">
                   <div
@@ -429,9 +430,9 @@ const Hero = (props: Props) => {
         </div>
       </div>  */}
       <MainMarquee />
-       
-      <PromiseMainComponent/>
-     </div>
+
+      <PromiseMainComponent />
+    </div>
   );
 };
 

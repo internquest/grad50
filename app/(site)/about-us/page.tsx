@@ -15,13 +15,13 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div className="w-full h-full text-primary-brown relative flex flex-col gap-10   ">
-      <div className="mx-auto flex flex-col gap-20 my-0 max-w-[1800px]">
+    <div className="w-full h-full  text-primary-brown relative flex flex-col gap-10   ">
+      <div className="mx-auto px-5 flex flex-col gap-20 my-0 w-full max-w-[1800px]">
         <div className="flex flex-col items-center gap-5">
-          <div className="mt-5 text-center font-cabiet-r  font-[700] text-[40px]  lg:mt-[40px] lg:text-[58px]  ">
+          <div className=" mt-10 text-center font-cabiet-r  font-[700] text-[40px]  lg:mt-[40px] lg:text-[58px]  ">
             Introducing
             <p className="relative w-fit mx-2 px-4 inline-block lg:mx-3">
-              <span className="absolute w-fit   -left-[22px]  scale-[0.7] lg:-left-1 lg:-top-3 lg:scale-[1]  ">
+              <span className="absolute w-fit   -left-[2px] -top-4 scale-[0.9] lg:-left-1 lg:-top-3 lg:scale-[1]  ">
                 <Image
                   src={circle}
                   width={1500 / 2}
@@ -33,11 +33,11 @@ const page = (props: Props) => {
               Grad50
             </p>
           </div>
-          <p className="  text-center font-generalsans-r leading-[62px]  md:w-3/5 text-2xl  lg:font-normal">
+          <p className="  text-center font-generalsans-r leading-[40px] lg:leading-[62px] w-full  md:w-3/5 text-2xl  lg:font-normal">
             Grad50 is creating a new path for students aiming for top 0.01%
             opportunities
           </p>
-          <p className="  text-center font-generalsans-r  text-2xl leading-[62px] font-[500] md:w-3/5 lg:text-[28px] lg:font-normal ">
+          <p className="  text-center font-generalsans-r  text-2xl leading-[40px] lg:leading-[62px] font-[500] w-full md:w-3/5 lg:text-[28px] lg:font-normal ">
             Have you ever dreamt of landing those dream opportunities that make
             headlines? You know, the ones where an IIT or NIT student bags a
             whopping{" "}
@@ -48,10 +48,10 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="flex flex-col gap-5 w-full h-full relative justify-center ">
-          <div className="mx-auto px-4 sm:px-10">
+          <div className="mx-auto px-1 sm:px-10">
             <ChallengeBox />
           </div>
-          <div className="my-5 mx-auto flex flex-col justify-center items-center px-5">
+          <div className="my-5 mx-auto flex flex-col w-full justify-center items-center px-5">
             {/* <HyringBox /> */}
             <h1 className="font-cabiet-black text-[33px] md:text-[40px] text-[#462B3480]">
               And so, we started
@@ -60,17 +60,17 @@ const page = (props: Props) => {
               Grad50
             </h1>
           </div>
-          <div className="w-full flex px-6 items-center justify-center">
+          <div className="w-full flex  md:px-6 items-center justify-center">
             <OurmissionAbout
               text="Our mission at Grad50 is simple yet ambitious – to level the playing field 
 and democratize access to high-paying dream job opportunities for 
 graduates by helping them explore top 0.01% elite opportunities at
 startups creating a new future "
-              className="max-w-[1150px] w-full bg-[#B6ECCC] px-14 text-center text-2xl lg:text-[30px] font-generalsans-m   h-fit rounded-[50px] leading-[40px] lg:leading-[60px] "
+              className="max-w-[1150px] w-full bg-[#B6ECCC] md:px-14 text-center text-2xl lg:text-[30px] font-generalsans-m   h-fit rounded-[50px] leading-[40px] lg:leading-[60px] "
             />
           </div>
           <div className="w-full flex items-center my-10 justify-center">
-            <p className="  text-center font-generalsans-r text-xl mx-4  md:text-2xl leading-[62px] font-[500] md:w-3/5 lg:text-[28px] lg:font-normal ">
+            <p className="  text-center font-generalsans-r text-xl mx-4  md:text-2xl leading-[40px] md:leading-[62px] font-[500] md:w-3/5 lg:text-[28px] lg:font-normal ">
               Our platform aims to bridge the gap between talented graduates and
               top-tier startups offering premium roles with competitive
               compensation packages.
@@ -81,9 +81,9 @@ startups creating a new future "
           </div> */}
         </div>
       </div>
-      <div className="z-20 flex min-h-[40vh] w-full max-w-[1800px] flex-col flex-wrap font-primary md:flex-row md:flex-nowrap">
-        <div className="flex min-h-[250px] flex-1 flex-col items-start  bg-[#462B34] p-5 text-[#FAFAFA] md:justify-start md:p-14 xl:justify-center">
-          
+      <div className="z-20 mx-auto px-5 flex min-h-[40vh] w-full max-w-[1800px] flex-col flex-wrap font-primary md:flex-row md:flex-nowrap">
+        <div className="flex min-h-[250px] flex-1 flex-col mx-auto items-start  bg-[#462B34] p-5 text-[#FAFAFA] md:justify-start md:p-14 xl:justify-center">
+
           <p className="mb-5 text-left text-[20px] font-cabiet-b md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-6xl  ">
             The Grad50 difference
           </p>
@@ -126,19 +126,19 @@ startups creating a new future "
             </p>
             <p
               className="text-md tick_lottie_text_opacity md:text-lg lg:text-xl xl:text-2xl"
-              // style={{ "--d": "0s" }}
+            // style={{ "--d": "0s" }}
             >
               50 LPA starting packages{" "}
             </p>
             <p
               className="text-md tick_lottie_text_opacity md:text-lg lg:text-xl xl:text-2xl"
-              // style={{ "--d": "1s" }}
+            // style={{ "--d": "1s" }}
             >
               Skill-based hiring challenges{" "}
             </p>
             <p
               className="text-md tick_lottie_text_opacity md:text-lg lg:text-xl xl:text-2xl"
-              // style={{ "--d": "2s" }}
+            // style={{ "--d": "2s" }}
             >
               Referrals to FAANG & fortune 500 companies{" "}
             </p>
