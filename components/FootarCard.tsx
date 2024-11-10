@@ -13,41 +13,41 @@ import { twMerge } from 'tailwind-merge';
 interface Props {
   heading?: string;
   subheading?: string;
-  className?:string;
+  className?: string;
 }
 
 const FootarCard = (props: Props) => {
   return (
-    <div className="undefined group group/item footer_adjust cursor-pointer  xl:w-[40%]  relative  ">
-      <div className={twMerge("item-start justify-start  border-2 bg-white  border-primary-brown bg-custom-blue  rounded-lg   w-full flex  items-center relative z-10",props.className)}>
+    <div className=" undefined group group/item footer_adjust cursor-pointer  xl:w-[40%]  relative  ">
+      <div className={twMerge("item-start justify-start  border-2 bg-white  border-primary-brown bg-custom-blue  rounded-lg   w-full flex group  items-center relative z-10", props.className)}>
         <div className="flex flex-col items-start  gap-2 px-2 py-8 md:px-5 md:py-12">
-        <div className="flex flex-row-reverse">
-  <div className="-ml-2  animate-bounce-with-delay"   style={{ "--d": "0.1s" } as any}>
-    <Image
-      src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companyone.png"}
-      width={1050 / 2}
-      height={750 / 2}
-      className=" w-fit"
-      alt="image"
-    />
-  </div>
-  <div className="-ml-2  animate-bounce-with-delay"   style={{ "--d": "0.2s" } as any}>
-    <Image
-      src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companytwo.png"}
-      width={50}
-      height={50}
-      alt="image"
-    />
-  </div>
-  <div className="-ml-2 animate-bounce-with-delay"   style={{ "--d": "0.3s" } as any}>
-    <Image
-      src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companythree.png"}
-      width={50}
-      height={50}
-      alt="image"
-    />
-  </div>
-</div>
+          <div className="flex flex-row-reverse">
+            <div className="-ml-2 group-hover:animate-bouncelogo"   >
+              <Image
+                src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companyone.png"}
+                width={1050 / 2}
+                height={750 / 2}
+                className=" w-fit"
+                alt="image"
+              />
+            </div>
+            <div className="-ml-2 group-hover:animate-bouncelogo group-hover:[animation-delay:-.1s]"   >
+              <Image
+                src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companytwo.png"}
+                width={50}
+                height={50}
+                alt="image"
+              />
+            </div>
+            <div className="-ml-2 group-hover:animate-bouncelogo group-hover:[animation-delay:-.2s]"   >
+              <Image
+                src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companythree.png"}
+                width={50}
+                height={50}
+                alt="image"
+              />
+            </div>
+          </div>
 
           <div className="pr-10">
             <div className="text-medium  text-lg md:text-2xl lg:text-[26px] ">
@@ -74,7 +74,7 @@ const FootarCard = (props: Props) => {
               width={100}
               height={100}
               alt="image"
-              className="w-fit  group-hover:animate-spin-slow h-fit"
+              className="w-fit  group-hover:animate-spin-circle-slow h-fit"
             />
             <div className="absolute bottom-[2.47rem] left-[2rem]">
               <Image

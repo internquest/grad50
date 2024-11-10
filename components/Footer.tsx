@@ -25,10 +25,10 @@ const Footer = (props: Props) => {
       <div className="footer relative mx-auto my-0 mt-10 h-full w-[95vw] max-w-[1800px] rounded-[30px] border-2 border-primary-brown pb-2 pt-10 font-WhyteInktrap-regular md:mt-60 md:pt-20 xl:h-[488px]">
         <div className="absolute -top-40  left-0 right-0 z-10 hidden  flex-col items-center justify-center gap-5 md:flex lg:-top-40 lg:flex-row lg:gap-20      ">
           <div className="undefined group footer_adjust cursor-pointer  xl:w-[40%]  relative  ">
-            <div className="item-start justify-start  border-2 bg-white  border-primary-brown bg-custom-green  rounded-lg   w-full flex  items-center relative z-10 ">
+            <div className="item-start group justify-start  border-2 bg-white  border-primary-brown bg-custom-green  rounded-lg   w-full flex  items-center relative z-10 ">
               <div className="flex flex-col items-start  gap-2 px-2 py-8 md:px-5 md:py-12">
                 <div className="flex flex-row-reverse">
-                  <div className="-ml-2">
+                  <div className="-ml-2 group-hover:animate-bouncelogo">
                     <Image
                       src={
                         "	https://hyring.nyc3.cdn.digitaloceanspaces.com/static/avatarone.png"
@@ -38,7 +38,7 @@ const Footer = (props: Props) => {
                       alt="image"
                     />
                   </div>
-                  <div className="-ml-2">
+                  <div className="-ml-2 group-hover:animate-bouncelogo group-hover:[animation-delay:-.1s]">
                     <Image
                       src={
                         "https://hyring.nyc3.cdn.digitaloceanspaces.com/static/avatartwo.png"
@@ -48,7 +48,7 @@ const Footer = (props: Props) => {
                       alt="image"
                     />
                   </div>
-                  <div className="-ml-2">
+                  <div className="-ml-2 group-hover:animate-bouncelogo group-hover:[animation-delay:-.2s]">
                     <Image
                       src={avatarthree}
                       width={50}
@@ -82,7 +82,7 @@ const Footer = (props: Props) => {
                     width={100}
                     height={100}
                     alt="image"
-                    className="w-fit group-hover:animate-spin-slow h-fit"
+                    className="w-fit group-hover:animate-spin-circle-slow h-fit"
                   />
                   <div className="absolute bottom-[2.47rem] left-[2rem]">
                     <Image

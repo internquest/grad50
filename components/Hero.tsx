@@ -58,7 +58,7 @@ const Hero = (props: Props) => {
             <div className="mb-8  mt-5 text-center font-WhyteInktrap-regular text-xl  font-normal lg:mb-[60px] lg:mt-[40px] lg:text-start lg:text-3xl">
               Hire from a pool of
               <p className="relative mx-2 inline-block lg:mx-3">
-                <span className="absolute -left-[4px] inset-0 -top-1 scale-[1.1] lg:-left-1 lg:-top-3 lg:scale-[1]  ">
+                <span className="absolute -left-[4px] inset-0 -top-1 scale-[1.1] lg:-left-0 lg:-top-3 lg:scale-[1.2]  ">
                   <Image
                     src={circle}
                     width={100}
