@@ -23,11 +23,17 @@ const FootarCard = (props: Props) => {
         <div className="flex flex-col items-start  gap-2 px-2 py-8 md:px-5 md:py-12">
           <div className="flex flex-row-reverse">
             <div className="-ml-2 group-hover:animate-bouncelogo"   >
+              {/* <Image
+                src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companyone.png"}
+                width={50}
+                height={50}
+                className=" w-fit"
+                alt="image"
+              /> */}
               <Image
                 src={"https://hyring.nyc3.cdn.digitaloceanspaces.com/static/companyone.png"}
-                width={1050 / 2}
-                height={750 / 2}
-                className=" w-fit"
+                width={50}
+                height={50}
                 alt="image"
               />
             </div>
