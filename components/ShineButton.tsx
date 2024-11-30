@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
@@ -11,21 +12,24 @@ import { twMerge } from "tailwind-merge";
 type Props = {
   text?: string;
   className?: string;
+  firsthover?: boolean;
 };
 
 const ShineButton = (props: Props) => {
+  console.log(props.firsthover);
+
   return (
     <div className="w-full group/edit ">
       <div
         className={twMerge(
-          `w-[180px]  lg:w-[220px] h-[52px] lg:h-[62px]  border-2 bg-bg-primary-orange relative overflow-hidden  rounded-[5px] border-primary-brown 
+          ` w-[180px]  lg:w-[220px] h-[52px] lg:h-[62px]  border-2 bg-bg-primary-orange relative overflow-hidden  rounded-[5px] border-primary-brown 
               before:content-[''] disableAnimate={true} before:w-[237px] before:h-[300px] before:-top-[234px] before:-left-[17px] lg:before:w-[344px] lg:before:h-[379px] 
               before:rounded-[20px] button-hover before:absolute lg:before:-top-[284px] lg:before:-left-[36px] before:-z-1 before:bg-primary-orange
        before:animate-circleFill  before:bg-[#FFB65E]   flex justify-center items-center relative z-30 text-black `,
           props.className
         )}
       >
-        <div className="w-[180px] lg:w-[220px] group-hover/items:bg-white h-[52px] lg:h-[62px] border-2 bg-bg-primary-orange relative overflow-hidden rounded-[5px]  ">
+        <div className={`w-[180px] lg:w-[220px] ${props.firsthover && 'bg-white'} h-[52px] lg:h-[62px] border-2 bg-bg-primary-orange relative overflow-hidden rounded-[5px]  `}>
           <div className="mx-auto flex items-center  w-full h-full justify-center gap-1">
             <div className="mr-1 font-medium text-lg btn-anim text-black md:text-lg">
               {" "}
@@ -40,7 +44,7 @@ const ShineButton = (props: Props) => {
                 height={100}
                 alt="image"
               />
-            </div>  
+            </div>
           </div>
         </div>
       </div>

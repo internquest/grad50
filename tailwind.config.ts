@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
+        circleFill: 'circleFill .3s linear',
         bouncelogo: 'bouncelogo .5s ease-in-out infinite ',
         'spin-slow': 'spin 5s linear infinite',
         'spin-circle-slow': 'spin 10s linear infinite',
@@ -25,6 +26,14 @@ const config: Config = {
           },
           '100%': {
             transform: 'translateY(0)'
+          }
+        },
+        circleFill: {
+          '0%': {
+            clipPath: 'circle(10%)'
+          },
+          '100%': {
+            clipPath: 'circle(75%)'
           }
         }
       }
