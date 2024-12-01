@@ -6,6 +6,7 @@ import PricingCard from '@/components/PricingCard';
 import pricesvg from '@/public/priceingsvg.svg';
 import Image from 'next/image';
 import pricing from '@/public/price.svg';
+import FaqINdividual from '@/components/FaqINdividual';
 
 const Page = () => {
 
@@ -37,7 +38,9 @@ const Page = () => {
               <div className="h-full  w-full border-2 bg-white rounded-[23px] border-primary-brown flex justify-center items-center relative z-[1] ">
                 <div className="w-full h-full p-3 md:px-5 lg:px-5 md:py-6">
                   <div>
-
+                    <FaqINdividual />
+                    <FaqINdividual />
+                    <FaqINdividual />
                   </div>
                 </div>
               </div>

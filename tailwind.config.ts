@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': { 'min': '540px' },
+        'xxs': { 'min': '440px' }
+      },
       animation: {
         circleFill: 'circleFill .3s linear',
         bouncelogo: 'bouncelogo .5s ease-in-out infinite ',

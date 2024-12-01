@@ -444,3 +444,30 @@ body {
   .animate-bounce-with-delay {
     animation: bounce 1s var(--d, 0s) linear infinite;
   }
+
+/* mui accordian */
+.MuiPaper-root{
+    background-color: #fff;
+    box-shadow: none;
+}
+.MuiAccordionSummary-root{
+    border-bottom: 2px solid rgb(70, 43, 52);
+
+}
+.css-1808mag-MuiPaper-root-MuiAccordion-root.Mui-expanded{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.css-jineix-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+    min-height: 0;
+}
+.css-7iurs7-MuiAccordionSummary-content{
+    margin-left: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.css-7iurs7-MuiAccordionSummary-content.Mui-expanded{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+}
