@@ -11,7 +11,7 @@ const AuthModal = (props: Props) => {
   const router = useRouter();
 
   const { onClose, isOpen } = useUnlockAccessModal();
-  console.log(isOpen);
+  // console.log(isOpen);
   const onChange = (open: boolean) => {
     if (!open) {
       onClose();

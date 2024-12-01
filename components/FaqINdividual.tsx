@@ -51,6 +51,8 @@ const FaqINdividual = ({ question, solution, identity }: faq) => {
     const [expanded, setExpanded] = useState<string | false>(false);
 
     const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: Boolean) => {
+        // console.log(isExpanded, panel, identity);
+
         setExpanded(isExpanded ? panel : false);
     };
     return (

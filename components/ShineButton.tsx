@@ -16,7 +16,7 @@ type Props = {
 };
 
 const ShineButton = (props: Props) => {
-  console.log(props.firsthover);
+  // console.log(props.firsthover);
 
   return (
     <div className="w-full group/edit ">
