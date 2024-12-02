@@ -481,15 +481,15 @@ body {
 }
 
 /* mui accordian */
-.MuiPaper-root {
+/* .MuiPaper-root {
     background-color: #fff;
     box-shadow: none;
-}
+} */
 
-.MuiAccordionSummary-root {
+/* .MuiAccordionSummary-root {
     border-bottom: 2px solid rgb(70, 43, 52) !important;
 
-}
+} */
 
 /* .css-1808mag-MuiPaper-root-MuiAccordion-root.Mui-expanded{
     margin-top: 0;

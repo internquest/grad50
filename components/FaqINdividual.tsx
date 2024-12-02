@@ -84,9 +84,14 @@ const FaqINdividual = ({ question, solution, identity }: faq) => {
 
             <Accordion expanded={expanded === identity} onChange={handleChange(identity)} sx={
                 {
+                    boxShadow: 'none',
+                    backgroundColor: '#fff',
                     '&.Mui-expanded': {
                         marginTop: 0,
                         marginBottom: 0,
+                    },
+                    '& .MuiAccordionSummary-root': {
+                        borderBottom: '2px solid rgb(70, 43, 52) '
                     },
                     '& .MuiAccordionSummary-root.Mui-expanded': {
                         minHeight: 0,
