@@ -82,7 +82,27 @@ const FaqINdividual = ({ question, solution, identity }: faq) => {
 
 
 
-            <Accordion expanded={expanded === identity} onChange={handleChange(identity)}  >
+            <Accordion expanded={expanded === identity} onChange={handleChange(identity)} sx={
+                {
+                    '&.Mui-expanded': {
+                        marginTop: 0,
+                        marginBottom: 0,
+                    },
+                    '& .MuiAccordionSummary-root.Mui-expanded': {
+                        minHeight: 0,
+                    },
+                    '& .MuiAccordionSummary-content': {
+                        marginLeft: '8px',
+                        marginTop: '12px',
+                        marginBottom: '12px',
+                    },
+                    '& .MuiAccordionSummary-content.Mui-expanded': {
+                        marginTop: '12px',
+                        marginBottom: '12px',
+                        marginLeft: '8px',
+                    },
+                }
+            } >
                 <AccordionSummary
 
 
