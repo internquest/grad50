@@ -38,9 +38,9 @@ const Page = () => {
               <div className="h-full  w-full border-2 bg-white rounded-[23px] border-primary-brown flex justify-center items-center relative z-[1] ">
                 <div className="w-full h-full p-3 md:px-5 lg:px-5 md:py-6">
                   <div>
-                    <FaqINdividual identity='panel1' />
-                    <FaqINdividual identity='panel2' />
-                    <FaqINdividual identity='panel3' />
+                    <FaqINdividual defaultstate={true} />
+                    <FaqINdividual defaultstate={false} />
+                    <FaqINdividual defaultstate={false} />
                   </div>
                 </div>
               </div>
