@@ -23,7 +23,7 @@ const Navbar = (props: Props) => {
   };
   return (
     <div className="pt-[14px]">
-      <div className="undefined mx-auto h-[67px] w-fit md:h-[102px]   relative  ">
+      <div className="undefined mx-auto min-h-[67px] w-fit md:min-h-[102px]   relative  ">
         {/* <div className="md:h-[102px] w-fit h-[67px] mx-auto relative"> */}
         <div className="w-[95vw] min-h-[63px] md:min-h-[93px] border-2 bg-custom-bg rounded-[10px] border-primary-brown 2xl:max-w-[1800px] 2xl:mx-auto 2xl:my-0 flex justify-center items-center relative z-1 ">
           {/* <div className="md:h-[93px] bg-custom-bg border-primary-brown border-[2px] rounded-[10px] justify-center items-center w-[95vw] flex z-10 relative"> */}

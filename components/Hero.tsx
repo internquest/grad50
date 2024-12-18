@@ -30,6 +30,7 @@ import greenstart from "@/public/greendothero.svg";
 import Marquee from "react-fast-marquee";
 import MainMarquee from "./MainMarquee";
 import PromiseMainComponent from "./PromiseMainComponent";
+import Heromain from "./Heromain";
 type Props = {};
 let marqueeItems = [
   { image: img1, name: "System Designer" },
@@ -45,7 +46,8 @@ let marqueeItems = [
 const Hero = (props: Props) => {
 
   return (
-    <div className="mt-3  max-w-[100vw] w-full md:mt-20 z-0 ">
+    <div className="  max-w-[100vw] w-full  z-0 ">
+      <Heromain />
       <div className="mx-auto  mb-3 md:mb-20 w-full max-w-[92vw]">
         <div className="mx-auto my-0 flex max-w-[1800px] flex-col lg:flex-row">
           <div className="basis-3/5 ">

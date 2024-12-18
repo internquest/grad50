@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       screens: {
         'xs': { 'min': '540px' },
-        'xxs': { 'min': '440px' }
+        'xxs': { 'min': '440px' },
+        'x14': { 'min': '1610px' },
       },
       animation: {
         circleFill: 'circleFill .3s linear',
