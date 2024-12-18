@@ -5,7 +5,7 @@ const Heromain = () => {
     const ref = useRef<HTMLDivElement>(null)
     const [areaRatio, setAreaRatio] = useState<number>(0); // State to hold the area ratio
     const [selectedBoxes, setSelectedBoxes] = useState<number[]>([]);
-    const windowwidth = document.documentElement.clientWidth
+    const windowwidth = window.document.documentElement.clientWidth
     // console.log(windowwidth);
 
 
