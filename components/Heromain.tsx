@@ -1,11 +1,13 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
+import { useWindowSize } from '@uidotdev/usehooks'
 
 const Heromain = () => {
     const ref = useRef<HTMLDivElement>(null)
     const [areaRatio, setAreaRatio] = useState<number>(0); // State to hold the area ratio
     const [selectedBoxes, setSelectedBoxes] = useState<number[]>([]);
-    const windowwidth = window.document.documentElement.clientWidth
+
+    const windowwidth = useWindowSize().width;
     // console.log(windowwidth);
 
 
@@ -18,8 +20,11 @@ const Heromain = () => {
 
             // Calculate the area of the specified box
 
-            const boxWidth = windowwidth >= 1610 ? 74 : windowwidth >= 1024 ? 64 : windowwidth >= 640 ? 54 : 44; // Width in pixels (adjust based on your responsive design)
-            const boxHeight = windowwidth >= 1610 ? 74 : windowwidth >= 1024 ? 64 : windowwidth >= 640 ? 54 : 44; // Height in pixels (adjust based on your responsive design)
+            const boxWidth: number = windowwidth !== null
+                ? (windowwidth >= 1610 ? 74 : windowwidth >= 1024 ? 64 : windowwidth >= 640 ? 54 : 44)
+                : 44;
+            const boxHeight: number = windowwidth !== null
+                ? (windowwidth >= 1610 ? 74 : windowwidth >= 1024 ? 64 : windowwidth >= 640 ? 54 : 44) : 44; // Height in pixels (adjust based on your responsive design)
             const boxArea = boxWidth * boxHeight; // Area of the box
 
             // Calculate the area ratio
