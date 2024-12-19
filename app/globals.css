@@ -199,6 +199,11 @@
 }
 
 @font-face {
+    font-family: cabinet-medium;
+    src: url('../static/fonts/CabinetGrotesk-Medium.woff2') format('woff2');
+}
+
+@font-face {
     font-family: cabinet-bold;
     src: url('../static/fonts/CabinetGrotesk-Bold.woff2') format('woff2');
 }
@@ -254,6 +259,13 @@
 
 body {
     background-color: #F1EAE4;
+}
+
+/* linebg */
+.linebg {
+    background: linear-gradient(90deg, #FFC682 10px, transparent 10px);
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
 }
 
 .divborder:hover {

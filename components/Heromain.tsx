@@ -54,7 +54,7 @@ const Heromain = () => {
 
 
     return (
-        <div ref={ref} className='relative mt-2 lg:mt-0 pb-10'>
+        <div ref={ref} className='relative mt-2 lg:mt-0  overflow-hidden'>
             <div className="absolute z-0 h-full w-[110dvw]">
                 <div className="h-[80%] w-full overflow-hidden">
                     <div className="flex flex-wrap !gap-0">
@@ -71,8 +71,8 @@ const Heromain = () => {
                 </div>
             </div>
             <div className="relative md:pt-36 pb-10 lg:py-20 py-3 z-10">
-                <h1 className='text-[#FB9D46] font-bold text-[48px] leading-[1.2] mx-auto text-center'>Hey there, future tech superstar! 👋</h1>
-                <p className='text-[24px] tracking-[.5px] leading-[1.4] text-center mx-auto mt-10 text-[#462B34] max-w-[606px]'>Want to see what companies are actually paying
+                <h1 className='text-[#FB9D46] font-bold text-[48px] font-cabiet-r tracking-[.02em] leading-[1.2] mx-auto text-center'>Hey there, future tech superstar! 👋</h1>
+                <p className='text-[24px] tracking-[.5px] leading-[2] font-generalsans-m px-3 text-center mx-auto mt-6 text-[#462B34] max-w-[606px]'>Want to see what companies are actually paying
                     top dollars for ?</p>
             </div>
         </div>

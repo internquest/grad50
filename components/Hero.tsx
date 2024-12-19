@@ -47,7 +47,7 @@ const Hero = (props: Props) => {
 
   return (
     <div className="  max-w-[100vw] w-full  z-0 ">
-      <Heromain />
+      {/* <Heromain /> */}
       <div className="mx-auto  mb-3 md:mb-20 w-full max-w-[92vw]">
         <div className="mx-auto my-0 flex max-w-[1800px] flex-col lg:flex-row">
           <div className="basis-3/5 ">

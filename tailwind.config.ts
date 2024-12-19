@@ -14,6 +14,7 @@ const config: Config = {
         'x14': { 'min': '1610px' },
       },
       animation: {
+        'cursor-blink': 'typedjsBlink 0.7s infinite',
         circleFill: 'circleFill .3s linear',
         bouncelogo: 'bouncelogo .5s ease-in-out infinite ',
         'spin-slow': 'spin 5s linear infinite',
@@ -21,6 +22,12 @@ const config: Config = {
         'scale-in-out': ' scaleInOut 3s ease-in-out infinite alternate',
       },
       keyframes: {
+        typedjsBlink: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '0' },
+          '100%': { opacity: '1' }
+        }
+        ,
         bouncelogo: {
           '0%': {
             transform: 'translateY(0)'
@@ -54,6 +61,7 @@ const config: Config = {
       'generalsans-b': ['GeneralSans-Bold'],
       'generalsans-m': ['GeneralSans-Medium'],
       'cabiet-r': ['cabinet-regular'],
+      'cabiet-m': ['cabinet-medium'],
       'cabiet-black': ['cabinet-black'],
       'cabiet-b': ['cabinet-bold'],
       'WhyteInktrap': ['WhyteInktrap-Bold'],
