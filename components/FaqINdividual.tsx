@@ -82,7 +82,8 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
     //     setExpanded(isExpanded ? panel : false);
     // };
 
-    const [heihgtvalue, setHeightValue] = useState<number>(0)
+    // const [heihgtvalue, setHeightValue] = useState<number>(0)
+    const [idval, setidval] = useState<string>("1")
 
     const solref = useRef<HTMLDivElement>(null)
     const handleClick = () => {
@@ -99,7 +100,11 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
         // }
     }
     useEffect(() => {
+        // console.log(open);
+
+        // console.log(solref.current?.id);
         if (solref.current) {
+            setidval(solref.current?.id)
             solref.current.style.height = (open === solref.current.id)
                 ? `${solref.current.scrollHeight}px`
                 : '0px';
@@ -129,7 +134,7 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
                     </div>
                     <div className='flex text-[rgba(0,0,0,0.54)] justify-center items-center transition-transform duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)] '>
                         {
-                            (open === solref?.current?.id) ?
+                            (open === idval) ?
                                 <svg xmlns="http://www.w3.org/2000/svg" width="39" height="9" fill="none" viewBox="0 0 39 9" className="scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1]"><path fill="#462B34" d="M3 2H39V9H3z"></path><path fill="#FDFDFD" stroke="#462B34" d="M1 1H37V7H1z"></path></svg>
                                 :
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="70" fill="none" viewBox="0 0 45 91" className="scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1]">
