@@ -125,11 +125,11 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
             <motion.div className={`w-full bg-white text-[rgba(0,0,0,.87)] shadow-none relative transition-[margin] duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)]`}>
                 <div onClick={() => handleClick()} className='border-b-[2px] border-[rgb(70,43,52)] flex cursor-pointer'>
                     <div className='ml-[8px] flex flex-grow my-[12px] mx-0'>
-                        <p className='lg:text-[28px] lg:py-4 leading-[40px] uppercase font-normal '>benifit</p>
+                        <p className='lg:text-[28px] lg:py-4 leading-[40px] uppercase font-normal '>benefit</p>
                     </div>
                     <div className='flex text-[rgba(0,0,0,0.54)] justify-center items-center transition-transform duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)] '>
                         {
-                            open ?
+                            (open === solref?.current?.id) ?
                                 <svg xmlns="http://www.w3.org/2000/svg" width="39" height="9" fill="none" viewBox="0 0 39 9" className="scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1]"><path fill="#462B34" d="M3 2H39V9H3z"></path><path fill="#FDFDFD" stroke="#462B34" d="M1 1H37V7H1z"></path></svg>
                                 :
                                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="70" fill="none" viewBox="0 0 45 91" className="scale-[0.7] md:scale-[0.8] lg:scale-[0.9] xl:scale-[1]">
