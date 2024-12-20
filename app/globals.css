@@ -520,3 +520,79 @@ body {
     margin-bottom: 12px;
     margin-left: 8px;
 } */
+
+/* contact */
+.bg-custom-bg-white {
+    background-color: #fafafa;
+}
+
+.border-text-primary {
+    border-color: #0e0f0c;
+}
+
+.contact-tab {
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .4s ease;
+    z-index: 1;
+}
+
+.border-secondary-color {
+    border-color: #102713;
+}
+
+.contact-tab+div {
+    left: 0;
+    top: 0;
+}
+
+.contact-tab:hover+div {
+    left: 8px;
+    top: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-tab:hover>div>div {
+        display: block;
+    }
+}
+
+.contact-tab:hover>div>div>div>.arrow-bounce {
+    animation: arrowBounce .7s linear forwards;
+}
+
+@keyframes arrowBounce {
+    0% {
+        left: 0;
+    }
+
+    40% {
+        left: 79%;
+    }
+
+    60% {
+        left: 55%;
+    }
+
+    80% {
+        left: 79%;
+    }
+
+    90% {
+        left: 70%;
+    }
+
+    100% {
+        left: 79%;
+    }
+}
+
+.contact-tab:hover>div>div>svg:first-child {
+    fill: #fff;
+}
+
+.flex-grow,
+.grow {
+    flex-grow: 1;
+}
