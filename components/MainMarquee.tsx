@@ -41,11 +41,11 @@ const MainMarquee = (props: Props) => {
     <div className="w-screen my-4">
       <div className="mx-auto h-[71px] min-w-full  -rotate-3 border border-primary-brown bg-primary-brown ">
         <div
-          className="py-4 overflow-hidden flex flex-row relative w-full 
+          className="py-4 overflow-hidden flex flex-row items-center h-full relative w-full 
         "
         >
           <Marquee>
-            <div className="flex flex-row min-w-full flex-grow-0 shrink-0 basis-auto">
+            <div className="flex h-full items-center ">
               {/* <div className="font-lg mx-3 flex w-fit items-center gap-2 font-WhyteInktrap-regular font-normal text-white ">
                   <Image
                     src={img1}
@@ -64,10 +64,10 @@ const MainMarquee = (props: Props) => {
                   >
                     <Image
                       src={item.image}
-                      width={100}
-                      height={100}
+                      width={25}
+                      height={25}
                       alt="image"
-                      className="w-fit object-contain h-fit"
+                      className=" object-contain "
                     />
                     <span className="">{item.name}</span>
                   </div>

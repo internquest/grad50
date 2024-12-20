@@ -48,7 +48,7 @@ const ImportantNotes = (props: Props) => {
           </div>
           <div className="text-medium   text-center text-2xl md:text-left md:text-3xl lg:text-[40px]">
 
-            <span className="text-base">{props.pricedescription}</span>
+            <span className="text-base font-generalsans-m">{props.pricedescription}</span>
           </div>
           {props.buttonText &&
             <div className="md:mt-5 group/border lg:mt-[27px]  h-[47px] w-fit cursor-pointer lg:h-[65px]  relative  ">

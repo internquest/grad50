@@ -65,12 +65,14 @@ type faq = {
     question?: string;
     solution?: string;
     indexed?: number;
-    defaultstate: Boolean;
+    open: string;
+    setOpen: Function;
+    id: string;
 }
 
 
 
-const FaqINdividual = ({ defaultstate, question, solution, indexed }: faq) => {
+const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) => {
     const faqanser = ['All-inclusive package', 'Save up to 50% of resource cost', 'Complete transparency on salary to candidates', 'Recruit Top 5% of Indian IT talent', 'Flexibility on contract (Min. 4 months)', 'Recognised as employee of the your company in Linkedin', 'Commitment to a Single Client Focus', 'Cool Offices Located Across India']
     // const [expanded, setExpanded] = useState<string | false>(false);
 
@@ -79,29 +81,30 @@ const FaqINdividual = ({ defaultstate, question, solution, indexed }: faq) => {
 
     //     setExpanded(isExpanded ? panel : false);
     // };
-    const [open, setOpen] = useState<Boolean>(defaultstate)
+
     const [heihgtvalue, setHeightValue] = useState<number>(0)
 
     const solref = useRef<HTMLDivElement>(null)
     const handleClick = () => {
+        // console.log(solref.current?.id);
 
-        setOpen(!open)
+        setOpen(solref.current?.id)
         // console.log(solref.current);
         // console.log(open);
 
-        if (solref.current) {
-            solref.current.style.height = !open
-                ? `${solref.current.scrollHeight}px`
-                : '0px';
-        }
+        // if (solref.current) {
+        //     solref.current.style.height = (open === solref.current.id)
+        //         ? `${solref.current.scrollHeight}px`
+        //         : '0px';
+        // }
     }
     useEffect(() => {
         if (solref.current) {
-            solref.current.style.height = open
+            solref.current.style.height = (open === solref.current.id)
                 ? `${solref.current.scrollHeight}px`
                 : '0px';
         }
-    }, [])
+    }, [open])
     // useEffect(() => {
     //     if (open) {
     //         if (solref.current) {
@@ -138,7 +141,7 @@ const FaqINdividual = ({ defaultstate, question, solution, indexed }: faq) => {
                         }
                     </div>
                 </div>
-                <div ref={solref} style={{ height: 0, overflow: 'hidden' }} className='duration-[376ms]   transition-[height]  ease-[cubic-bezier(0.4,0,0.2,1)] '>
+                <div ref={solref} id={id} style={{ height: 0, overflow: 'hidden' }} className='duration-[376ms]   transition-[height]  ease-[cubic-bezier(0.4,0,0.2,1)] '>
                     <div className='flex w-full h-full '>
                         <div className='w-full'>
                             <div className='py-0 px-4 border-b-[2px] border-[rgb(70,43,52)] '>
