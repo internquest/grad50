@@ -6,7 +6,7 @@ const ChallengeInfo = () => {
             <div className='mx-auto relative max-w-[1280px] bg-[#FFC682] rounded-[20px] h-[600px] p-4 '>
                 <div className='  border-dotted border-[10px] p-4 rounded-[20px] border-[#462B34] h-full'>
                     <div className='bg-[#462B34] flex flex-col items-center h-full'>
-                        <p className='text-[19px] leading-[2] mx-auto text-[#F8F6F7] mt-28 tracking-[.01em] text-center font-generalsans-r max-w-[620px]'>
+                        <p className='text-[19px] leading-[2] mx-4 md:mx-auto text-[#F8F6F7] mt-28 tracking-[.01em] text-center font-generalsans-r max-w-[620px]'>
                             We know you're tired of the usual "join our course, get into FAANG"
                             promises. Let's cut through the noise and show you real opportunities
                             that could transform your career trajectory. Here are some exclusive

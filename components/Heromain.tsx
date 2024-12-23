@@ -54,7 +54,7 @@ const Heromain = () => {
 
 
     return (
-        <div ref={ref} className='relative mt-2 lg:mt-0  overflow-hidden'>
+        <div ref={ref} className='relative mt-2 lg:mt-0 h-[560px] overflow-hidden'>
             <div className="absolute z-0 h-full w-[110dvw]">
                 <div className="h-[80%] w-full overflow-hidden">
                     <div className="flex flex-wrap !gap-0">

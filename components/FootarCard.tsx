@@ -18,7 +18,7 @@ interface Props {
 
 const FootarCard = (props: Props) => {
   return (
-    <div className=" undefined group group/item footer_adjust cursor-pointer  xl:w-[40%]  relative  ">
+    <div className=" undefined group group/item footer_adjust cursor-pointer  lg:w-[40%]  relative  ">
       <div className={twMerge("item-start justify-start  border-2 bg-white  border-primary-brown bg-custom-blue  rounded-lg   w-full flex group  items-center relative z-10", props.className)}>
         <div className="flex flex-col items-start  gap-2 px-2 py-8 md:px-5 md:py-12">
           <div className="flex flex-row-reverse">

@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'xs': { 'min': '540px' },
         'xxs': { 'min': '440px' },
+        'xs': { 'min': '540px' },
         'x14': { 'min': '1610px' },
+        'max-sm': { 'max': '600px' },
+        'max-lg': { 'max': '1023px' },
       },
       animation: {
         'cursor-blink': 'typedjsBlink 0.7s infinite',

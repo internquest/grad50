@@ -23,8 +23,8 @@ const Footer = (props: Props) => {
       </div>
       {/* this above  */}
       <div className="footer relative mx-auto my-0 mt-10 h-full w-[95vw] max-w-[1800px] rounded-[30px] border-2 border-primary-brown pb-2 pt-10 font-WhyteInktrap-regular md:mt-60 md:pt-20 xl:h-[488px]">
-        <div className="absolute -top-40  left-0 right-0 z-10 hidden  flex-col items-center justify-center gap-5 md:flex lg:-top-40 lg:flex-row lg:gap-20      ">
-          <div className="undefined group footer_adjust cursor-pointer  xl:w-[40%]  relative  ">
+        <div className="absolute -top-40  left-0 right-0 z-10 hidden  flex-col items-center justify-center gap-5 md:flex lg:-top-40 lg:flex-row lg:gap-12 xl:gap-20      ">
+          <div className="undefined group footer_adjust cursor-pointer  lg:w-[40%]  relative  ">
             <div className="item-start group justify-start  border-2 bg-white  border-primary-brown bg-custom-green  rounded-lg   w-full flex  items-center relative z-10 ">
               <div className="flex flex-col items-start  gap-2 px-2 py-8 md:px-5 md:py-12">
                 <div className="flex flex-row-reverse">
@@ -194,7 +194,7 @@ const Footer = (props: Props) => {
             </p>
           </div>
         </div>
-        <div className="m-auto mt-0 flex max-w-min items-start gap-x-2 px-2 pt-6 sm:mt-5 md:items-start md:gap-x-12 md:px-4 lg:max-w-[1200px] xl:max-w-[1200px] xl:gap-16 2xl:max-w-[85%]">
+        <div className="m-auto mt-0 flex max-w-min items-start gap-x-2 px-2 pt-6 sm:mt-5 md:items-start gap-8 lg:gap-x-8 md:px-4 lg:max-w-[1200px] xl:max-w-[1200px] xl:gap-16 2xl:max-w-[85%]">
           <div className="lg:block hidden  basis-[300px]">
             <div className="">
               <Image
@@ -492,9 +492,9 @@ const Footer = (props: Props) => {
             <h2 className="text-[22px]">Subscribe Newsletter</h2>
             <div className="m-auto flex items-center gap-2 pb-0">
               <div className="h-[60px] undefined w-fit cursor-pointer  text-2xl    relative  ">
-                <div className="w-[215px] h-[57px] border bg-white rounded-[8px] border-primary-brown flex justify-center items-center relative z-10 ">
+                <div className="w-[215px] xxs:w-[270px]  h-[57px] border bg-white rounded-[8px] border-primary-brown flex justify-center items-center relative z-10 ">
                   <div className="">
-                    <div className="leading-[2rem] text-ellipsis px-[10px]    w-[230px] ">
+                    <div className="leading-[2rem] text-ellipsis px-[10px]    md:w-[230px] ">
                       <input
                         type="text"
                         placeholder="Enter Email Address"

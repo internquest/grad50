@@ -10,6 +10,7 @@ import HyringBox from "@/components/HyringBox";
 import SpinComponent from "@/components/SpinComponent";
 import OurmissionAbout from "@/components/OurmissionAbout";
 import ExclusiveMembetAbout from "@/components/ExclusiveMembetAbout";
+import Tickanimation from "@/components/Tickanimation";
 
 type Props = {};
 
@@ -43,7 +44,7 @@ const page = (props: Props) => {
             whopping{" "}
             <span className="font-semibold font-generalsans-b">₹1 CR</span>{" "}
             package or secures{" "}
-            <span className="font-semibold font-generalsans-b">₹50 LPA</span>
+            <span className="font-semibold font-generalsans-b">₹50 LPA</span>{' '}
             job straight out of college?
           </p>
         </div>
@@ -81,23 +82,26 @@ startups creating a new future "
           </div> */}
         </div>
       </div>
-      <div className="z-20 mx-auto px-5 flex min-h-[40vh] w-full max-w-[1800px] flex-col flex-wrap font-primary md:flex-row md:flex-nowrap">
-        <div className="flex min-h-[250px] flex-1 flex-col mx-auto items-start  bg-[#462B34] p-5 text-[#FAFAFA] md:justify-start md:p-14 xl:justify-center">
+      <div className="z-20   flex min-h-[500px] w-full  flex-col justify-center flex-wrap font-primary lg:flex-row md:flex-nowrap">
+        <div className="w-full lg:w-1/2 bg-[#462B34] flex items-center">
+          <div className="flex min-h-[250px] flex-1 flex-col max-w-[640px] mx-auto items-start   p-5 text-[#FAFAFA]  md:p-14 justify-center">
 
-          <p className="mb-5 text-left text-[20px] font-cabiet-b md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-6xl  ">
-            The Grad50 difference
-          </p>
-          <p className="text-md md:text-lg lg:text-lg xl:text-xl">
-            <span className=" h-full leading-[50px] md:text-2xl">
-              Grad50 is here to transform the landscape of dream opportunities
-              in tech for students by providing them access to exclusive 0.01%
-              roles that offer competitive compensation packages, starting from
-              ₹50 LPA and beyond.
-            </span>
-          </p>
+            <p className="mb-5 text-left  font-cabiet-black text-[#EAA24B] md:text-left text-2xl md:text-4xl lg:text-5xl   ">
+              The Grad50 difference
+            </p>
+            <p className="text-md md:text-lg lg:text-lg xl:text-xl">
+              <span className=" h-full !leading-[2] text-white/[.9] font-generalsans-m md:text-[20px]">
+                Grad50 is here to transform the landscape of dream opportunities
+                in tech for students by providing them access to exclusive 0.01%
+                roles that offer competitive compensation packages, starting from
+                ₹50 LPA and beyond.
+              </span>
+            </p>
+          </div>
         </div>
-        <div className="flex flex-1 bg-[#361C24] p-5 text-[#FAFAFA] md:p-14">
-          <div className="tick_svg_dynamic_height mt-2 flex h-[330px] w-[42px] md:w-[50px]">
+        <div className="w-full lg:w-1/2 bg-[#361C24] flex items-center">
+          <div className="flex flex-1 mx-auto bg-[#361C24] p-5 max-w-[640px]  items-center justify-start xl:justify-center text-[#FAFAFA] md:p-14">
+            {/* <div className="tick_svg_dynamic_height mt-2 flex h-[330px] w-[42px] md:w-[50px]">
             <div
               title=""
               role="button"
@@ -119,35 +123,21 @@ startups creating a new future "
                 alt="image"
               />
             </div>
-          </div>
-          <div className="tick_text_dynamic_height  flex flex-col gap-[50px] md:gap-[42px] mt-3 md:mt-2">
-            <p className="text-md md:text-lg lg:text-xl xl:text-2xl">
-              Top 0.01% exclusive dream opportunities{" "}
-            </p>
-            <p
-              className="text-md tick_lottie_text_opacity md:text-lg lg:text-xl xl:text-2xl"
-            // style={{ "--d": "0s" }}
-            >
-              50 LPA starting packages{" "}
-            </p>
-            <p
-              className="text-md tick_lottie_text_opacity md:text-lg lg:text-xl xl:text-2xl"
-            // style={{ "--d": "1s" }}
-            >
-              Skill-based hiring challenges{" "}
-            </p>
-            <p
-              className="text-md tick_lottie_text_opacity md:text-lg lg:text-xl xl:text-2xl"
-            // style={{ "--d": "2s" }}
-            >
-              Referrals to FAANG & fortune 500 companies{" "}
-            </p>
+          </div> */}
+
+            <Tickanimation />
+
+
+
           </div>
         </div>
       </div>
 
       <div className="w-full px-5 sm:px-10  h-full">
-        <ExclusiveMembetAbout />
+        <div className="max-w-[1330px] mx-auto">
+
+          <ExclusiveMembetAbout />
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const ExclusiveMembetAbout = (props: Props) => {
   return (
     <div className="w-full max-w-[] rounded-[9px]  border-2 border-primary-brown   relative  ">
       <div className="border-3   w-full !justify-start  bg-white   rounded-[9px] border-primary-brown flex   items-center relative z-1 ">
-        <div className="w-full   flex-col  md:flex-row flex items-center p-5 md:p-10">
+        <div className="w-full   flex-col  md:flex-row gap-5 xl:gap-0 flex items-center p-5 md:p-10">
           <div className="flex flex-wrap-reverse  max-w-[1250px] w-full items-center justify-center gap-2  px-0 md:flex-nowrap   ">
             <div className="relative  w-full">
               <div

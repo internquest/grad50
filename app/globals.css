@@ -596,3 +596,91 @@ body {
 .grow {
     flex-grow: 1;
 }
+
+
+
+.circle {
+    fill: transparent;
+    animation: circleFillup 0.5s ease-out forwards;
+}
+
+.check {
+    stroke-dasharray: 200;
+    stroke-dashoffset: -200;
+    animation: drawCheck 0.5s ease-out forwards;
+}
+
+.line {
+
+    animation: drawLine 0.5s ease-out forwards;
+}
+
+@keyframes circleFillup {
+    to {
+        fill: #EAA24B;
+    }
+}
+
+@keyframes drawCheck {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawLine {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+/* Timing for first sequence */
+#circle1 {
+    animation-delay: 0.2s;
+}
+
+#check1 {
+    animation-delay: 0.5s;
+}
+
+#line1 {
+    animation-delay: 1s;
+}
+
+/* Timing for second sequence */
+#circle2 {
+    animation-delay: 1.5s;
+}
+
+#check2 {
+    animation-delay: 2s;
+}
+
+#line2 {
+    animation-delay: 2.5s;
+}
+
+/* Timing for third sequence */
+#circle3 {
+    animation-delay: 3s;
+}
+
+#check3 {
+    animation-delay: 3.5s;
+}
+
+#line3 {
+    animation-delay: 4s;
+}
+
+/* Timing for fourth sequence */
+#circle4 {
+    animation-delay: 4.5s;
+}
+
+#check4 {
+    animation-delay: 5s;
+}

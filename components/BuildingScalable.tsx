@@ -13,7 +13,7 @@ const BuildingScalable = () => {
         }
     }, [isInView]);
     return (
-        <div ref={ref} className='bg-white rounded-[10px] p-10 font-cabiet-m text-[#FF7452] text-[48px] tracking-[.01em]'>
+        <div ref={ref} className='bg-white rounded-[10px] p-10 font-cabiet-m text-[#FF7452] text-[26px] md:text-[48px] tracking-[.01em]'>
             {startTyping &&
                 <TypeWriter text='building scalable systems' />
             }
