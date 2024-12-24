@@ -22,12 +22,19 @@ const config: Config = {
         'spin-slow': 'spin 5s linear infinite',
         'spin-circle-slow': 'spin 10s linear infinite',
         'scale-in-out': ' scaleInOut 3s ease-in-out infinite alternate',
+        spin: 'spin 5s linear infinite',
       },
       keyframes: {
         typedjsBlink: {
           '0%': { opacity: '1' },
           '50%': { opacity: '0' },
           '100%': { opacity: '1' }
+        }
+        ,
+        spin: {
+          '100%': {
+            transform: 'rotate(1turn)'
+          }
         }
         ,
         bouncelogo: {

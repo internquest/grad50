@@ -124,7 +124,7 @@
 
 .bg-secondary-color {
     --tw-bg-opacity: 1;
-    background-color: rgb(70 43 52/var(--tw-bg-opacity));
+    background-color: rgb(16 39 19/var(--tw-bg-opacity));
 }
 
 .text-quaternary-color {
@@ -683,4 +683,80 @@ body {
 
 #check4 {
     animation-delay: 5s;
+}
+
+/* why india */
+.text-custom-bg-grey {
+    --tw-text-opacity: 1;
+    color: rgb(231 233 231 / var(--tw-text-opacity));
+}
+
+.bg-primary-color {
+    background-color: rgb(156, 229, 109);
+}
+
+.text-quinary-color {
+    --tw-text-opacity: 1;
+    color: rgb(106 108 106 / var(--tw-text-opacity));
+}
+
+.text-text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(14 15 12 / var(--tw-text-opacity));
+}
+
+.bg-custom-bg-grey {
+    --tw-bg-opacity: 1;
+    background-color: rgb(231 233 231 / var(--tw-bg-opacity));
+}
+
+.text-custom-bg-secondary {
+    --tw-text-opacity: 1;
+    color: rgb(255 247 239 / var(--tw-text-opacity));
+}
+
+.fill-secondary,
+.fill-secondary-color {
+    fill: #102713;
+}
+
+.border-secondary-color {
+    border-color: rgb(16 39 19);
+}
+
+/* .fill-primary-color {
+    fill: #9ce56d;
+}
+
+.stroke-text-primary {
+    stroke: #0e0f0c;
+} */
+
+/* roles in demand */
+.bg-custom-bg-ash {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 239 236 / var(--tw-bg-opacity));
+}
+
+.bg-custom-bg-ash {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 239 236 / var(--tw-bg-opacity));
+}
+
+.bg-custom-bg-lime {
+    --tw-bg-opacity: 1;
+    background-color: rgb(235 250 226 / var(--tw-bg-opacity));
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.bg-text-primary {
+    background-color: rgb(14, 15, 12);
 }
