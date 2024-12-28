@@ -31,7 +31,7 @@ const UnlockAccessModalCard = (props: Props) => {
               return (
                 <div
                   key={item}
-                  className="font-lg overflow-hidden mx-3 flex w-fit items-center gap-2 font-WhyteInktrap-regular font-normal text-white "
+                  className="font-lg overflow-hidden mx-3 flex w-fit items-center gap-2 font-generalsans-r font-normal text-white "
                 >
                   <Image
                     src={item.image}

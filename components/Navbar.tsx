@@ -30,7 +30,7 @@ const Navbar = (props: Props) => {
             {/* <div className="md:h-[102px] w-fit h-[67px] mx-auto relative"> */}
             <div className="w-[95vw] min-h-[63px] md:min-h-[93px] border-2 bg-custom-bg rounded-[10px] border-primary-brown 2xl:max-w-[1800px] 2xl:mx-auto 2xl:my-0 flex justify-center items-center relative z-1 ">
               {/* <div className="md:h-[93px] bg-custom-bg border-primary-brown border-[2px] rounded-[10px] justify-center items-center w-[95vw] flex z-10 relative"> */}
-              <div className="flex w-full  items-center justify-between px-5 font-WhyteInktrap-medium text-[17px] md:px-8 xl:px-10 xl:text-xl     ">
+              <div className="flex w-full  items-center justify-between px-5 font-generalsans-m text-[17px] md:px-8 xl:px-10 xl:text-xl     ">
                 {/* <div className="md:px-8 text-[17px] px-5 justify-between items-center w-full flex"> */}
                 <div className="-ml-7 scale-[0.6] md:scale-[0.8] xl:-ml-0 xl:scale-[1] ">
                   <Link href={"/"}>
@@ -75,7 +75,7 @@ const Navbar = (props: Props) => {
                         <div className="w-full cursor-pointer md:w-[5rem] xl:h-[57px] relative">
                           <div className="w-full z-10 px-5  md:px-0 md:w-[5rem]  h-[44px] xl:h-[52px] border bg-white button-hover   rounded-[4px] border-primary-brown flex justify-center items-center relative z-1 ">
                             <div className="flex items-center gap-1">
-                              <div className="mr-1 font-WhyteInktrap-regular text-lg md:text-lg">
+                              <div className="mr-1 font-generalsans-r text-lg md:text-lg">
                                 Login
                               </div>
                             </div>
@@ -187,7 +187,7 @@ const Navbar = (props: Props) => {
               <div
                 onClick={() => handlebar()}
                 className={`${show
-                  ? "flex flex-col gap-6   font-WhyteInktrap-medium text-lg   "
+                  ? "flex flex-col gap-6   font-generalsans-m text-lg   "
                   : "hidden font-primaryMedium text-lg  "
                   } `}
               >

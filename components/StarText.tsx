@@ -11,20 +11,20 @@ type Props = {
 const StarText = (props: Props) => {
   return (
     <div
-      className="font-WhyteInktrap-medium  undefined  md:whitespace-nowrap
+      className="font-generalsans-m  undefined  md:whitespace-nowrap
                   text-base sm:text-[14px] md:text-[17px] lg:text-[16px]   
-                  xl:text-[17px] 2xl:text-[20px]   flex items-start justify-start gap-1 my-3 md:my-5 xl:my-8"
+                  xl:text-[17px] 2xl:text-[20px]   flex items-start justify-start gap-3 my-3 md:my-5 xl:my-8"
     >
-      <div className="basis-[10%] relative">
+      <div className=" h-[20px] w-[20px] relative">
         <Image
           src={props.image || bluestar}
-          height={20}
           width={20}
-
+          height={20}
+          className='rotate-[-30deg]'
           alt={"image"}
         />
       </div>
-      <div className="basis-[90%]">{props.text} </div>
+      <div className="">{props.text} </div>
     </div>
   )
 }

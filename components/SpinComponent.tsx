@@ -116,12 +116,12 @@ const SpinComponent = (props: Props) => {
               </div>
             </div>
             <div className="w-full min-w-[200px] flex-1">
-              <p className="mb-2 font-WhyteInktrap-medium text-xl text-primary-brown sm:text-3xl md:mb-5 md:text-4xl lg:text-5xl xl:text-6xl">
+              <p className="mb-2 font-generalsans-m text-xl text-primary-brown sm:text-3xl md:mb-5 md:text-4xl lg:text-5xl xl:text-6xl">
                 Network
               </p>
               <p className="text-md font-primary text-primary-brown sm:text-lg md:text-xl xl:text-2xl">
                 Work with consolidated top 5% of talent pool of over
-                <span className="font-WhyteInktrap-medium">500,000</span>
+                <span className="font-generalsans-m">500,000</span>
                 professionals, including designers, developers, marketers,
                 analysts, data scientists, testers and cybersecurity experts.
               </p>

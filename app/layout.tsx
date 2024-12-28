@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` ${inter.className} bg-image`}>
+      <body className={` font-generalsans-m bg-image`}>
         <ModalProvider />
 
         {children}

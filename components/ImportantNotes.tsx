@@ -34,7 +34,7 @@ const ImportantNotes = (props: Props) => {
               />
             </div>
           }
-          <div className="text-medium font-medium  font-WhyteInktrap-medium font-text-primary-brown  text-lg md:text-2xl lg:text-[26px] ">
+          <div className="text-medium font-medium  font-generalsans-m font-text-primary-brown  text-lg md:text-2xl lg:text-[26px] ">
             {props.title}
           </div>
           <div className="relative -left-[50px] self-start md:-left-[31px] md:scale-[1.2] lg:-left-[28px] lg:scale-[1.4]">

@@ -46,7 +46,7 @@ const MainMarquee = (props: Props) => {
         >
           <Marquee>
             <div className="flex h-full items-center ">
-              {/* <div className="font-lg mx-3 flex w-fit items-center gap-2 font-WhyteInktrap-regular font-normal text-white ">
+              {/* <div className="font-lg mx-3 flex w-fit items-center gap-2 font-generalsans-r font-normal text-white ">
                   <Image
                     src={img1}
                     width={100}
@@ -60,7 +60,7 @@ const MainMarquee = (props: Props) => {
                 return (
                   <div
                     key={item}
-                    className="font-sm overflow-hidden mx-3 flex w-fit items-center gap-2 font-WhyteInktrap-regular font-normal text-white "
+                    className="font-sm overflow-hidden mx-3 flex w-fit items-center gap-2 font-generalsans-r font-normal text-white "
                   >
                     <Image
                       src={item.image}

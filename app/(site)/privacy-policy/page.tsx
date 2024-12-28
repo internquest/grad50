@@ -9,7 +9,7 @@ const page = (props: Props) => {
       <div className="h-fit min-w-[350px] hidden md:flex">
         <div className="w-full   relative  ">
           <div className="flex text-primary-brown flex-col px-4 py-5 font-primary z-10 !justify-start !items-start  border-2 border-primary-brown w-full h-full bg-[#FFF9F3] rounded-[10px] w-full mx-auto flex justify-center items-center relative z-1 ">
-            <div className="font-WhyteInktrap-medium mb-2 text-xl md:text-2xl mr-8">
+            <div className="font-generalsans-m mb-2 text-xl md:text-2xl mr-8">
               Privacy Policy
             </div>
             <div className="h-full overflow-auto">
@@ -45,7 +45,7 @@ const page = (props: Props) => {
                     </li>
                   </Link>
                 </ul>
-                <p className="text-xl mb-2.5 font-WhyteInktrap-medium">
+                <p className="text-xl mb-2.5 font-generalsans-m">
                   Cookie Policy
                 </p>
                 <ul className="text-sm font-primary ml-4 flex flex-col gap-1.5">
@@ -69,13 +69,13 @@ const page = (props: Props) => {
           <div className="min-w-[200px] w-full h-full rounded-[10px] top-2 left-2 -z-10  bg-primary-brown   absolute  "></div>
         </div>
       </div>
-      <div className="font-WhyteInktrap-regular text-primary-brown w-[95vw] mx-auto">
-        <p className="font-WhyteInktrap-medium text-4xl mb-5">
+      <div className="font-generalsans-r text-primary-brown w-[95vw] mx-auto">
+        <p className="font-generalsans-m text-4xl mb-5">
           Hyring Privacy Policy
         </p>
-        <p className="text-lg font-WhyteInktrap-regular mb-5">
+        <p className="text-lg font-generalsans-r mb-5">
           EFFECTIVE DATE:{" "}
-          <span className="text-lg font-WhyteInktrap-medium">May 1, 2023</span>
+          <span className="text-lg font-generalsans-m">May 1, 2023</span>
         </p>
         <p className="font-primary text-lg mb-3">
           <strong>Hyring.com</strong> is committed to protecting the privacy and
@@ -85,7 +85,7 @@ const page = (props: Props) => {
         </p>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="information-we-collect"
           >
             1. Information We Collect:
@@ -101,7 +101,7 @@ const page = (props: Props) => {
         </div>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="use-of-information"
           >
             2. Use of Information:
@@ -117,7 +117,7 @@ const page = (props: Props) => {
 
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="sharing-of-information"
           >
             3. Sharing of Information:
@@ -133,7 +133,7 @@ const page = (props: Props) => {
 
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="security-of-information"
           >
             4. Security of Information:
@@ -148,7 +148,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="cookie-tracking">
+          <p className="font-generalsans-m text-lg mb-2" id="cookie-tracking">
             5. Cookies and Tracking:
           </p>
           <p>
@@ -160,7 +160,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="children-privacy">
+          <p className="font-generalsans-m text-lg mb-2" id="children-privacy">
             6. Children’s Privacy:
           </p>
           <p>
@@ -172,7 +172,7 @@ const page = (props: Props) => {
         </div>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="changes-privacy-policy"
           >
             7. Changes to Privacy Policy:
@@ -186,9 +186,9 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="font-primary">
-          <p className="text-4xl font-WhyteInktrap-medium mb-3">Cookie Policy</p>
+          <p className="text-4xl font-generalsans-m mb-3">Cookie Policy</p>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="eligibility">
+            <p className="font-generalsans-m text-lg mb-2" id="eligibility">
               1. What are Cookies?
             </p>
             <p>
@@ -199,7 +199,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="user-account">
+            <p className="font-generalsans-m text-lg mb-2" id="user-account">
               2. Types of Cookies We Use:
             </p>
             <p className="mb-2">
@@ -248,7 +248,7 @@ const page = (props: Props) => {
             </div>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="job-posting">
+            <p className="font-generalsans-m text-lg mb-2" id="job-posting">
               3. Changes to Cookie Policy:
             </p>
             <p>

@@ -44,7 +44,7 @@
 //                   className="w-fit h-full object-cover"
 //                   alt=""
 //                 />
-//                 <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+//                 <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
 //                   <h3>Subpar</h3>
 //                   <h3>Developers</h3>
 //                 </div>
@@ -59,7 +59,7 @@
 //                   className="w-fit h-full object-cover"
 //                   alt=""
 //                 />
-//                 <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+//                 <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
 //                   <h3>Hefty</h3>
 //                   <h3>Commission</h3>
 //                 </div>
@@ -74,7 +74,7 @@
 //                   className="w-fit h-full object-cover"
 //                   alt=""
 //                 />
-//                 <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+//                 <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
 //                   <h3>Ambiguous</h3>
 //                   <h3>Contracts</h3>
 //                 </div>
@@ -89,7 +89,7 @@
 //                   className="w-fit h-full object-cover"
 //                   alt=""
 //                 />
-//                 <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+//                 <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
 //                   <h3>Outdated</h3>
 //                   <h3>Portals</h3>
 //                 </div>
@@ -123,12 +123,12 @@ const ChallengeBox = (props: Props) => {
             <div className="flex flex-col gap-2">
               <div className="flex flex-col font-cabiet-b text-primary-brown text-3xl   md:text-5xl">
                 <h2 className="text-[28px] leading-[40px]">
-                At Grad50, we're passionate about empowering the best student
- talents unlock and achieve dream opportunities in tech
+                  At Grad50, we're passionate about empowering the best student
+                  talents unlock and achieve dream opportunities in tech
                 </h2>
                 {/* <h2 className="">Staff Augmentation</h2> */}
               </div>
-             
+
             </div>
             {/* <div className="-ml-8 scale-[0.6] xxs:-ml-7  xxs:scale-[0.7] sm:-ml-6 sm:scale-[0.8] md:ml-0 md:scale-[0.9] lg:scale-[1]">
               <Image
@@ -142,12 +142,12 @@ const ChallengeBox = (props: Props) => {
           </div>
           <div className=" my-10 w-full border border-[#000000]"></div>
           <div className="max-w-[1250px] w-full font-generalsans-m text-xl leading-[40px] font-[500]">Inspired by the success stories of students from prestigious institutions like IITs
-and IIMs securing lucrative job offers, we recognized the need for a platform that
-enables all talented graduates to access such dream opportunities with
-starting CTCs of ₹50 LPA and above.
+            and IIMs securing lucrative job offers, we recognized the need for a platform that
+            enables all talented graduates to access such dream opportunities with
+            starting CTCs of ₹50 LPA and above.
 
-We believe that every student irrespective of their college or university deserves an 
-opportunity to apply for dream startup opportunities and international grad roles</div>
+            We believe that every student irrespective of their college or university deserves an
+            opportunity to apply for dream startup opportunities and international grad roles</div>
           {/* <div className=" grid w-full grid-cols-fluid place-items-center gap-y-5 sm:justify-items-center ">
             <div className="">
               <div className="flex flex-col items-center sm:items-start">
@@ -158,7 +158,7 @@ opportunity to apply for dream startup opportunities and international grad role
                   className="w-fit h-full object-cover"
                   alt=""
                 />
-                <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+                <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
                   <h3>Subpar</h3>
                   <h3>Developers</h3>
                 </div>
@@ -173,7 +173,7 @@ opportunity to apply for dream startup opportunities and international grad role
                   className="w-fit h-full object-cover"
                   alt=""
                 />
-                <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+                <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
                   <h3>Hefty</h3>
                   <h3>Commission</h3>
                 </div>
@@ -188,7 +188,7 @@ opportunity to apply for dream startup opportunities and international grad role
                   className="w-fit h-full object-cover"
                   alt=""
                 />
-                <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+                <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
                   <h3>Ambiguous</h3>
                   <h3>Contracts</h3>
                 </div>
@@ -203,7 +203,7 @@ opportunity to apply for dream startup opportunities and international grad role
                   className="w-fit h-full object-cover"
                   alt=""
                 />
-                <div className="font[400] my-2 font-WhyteInktrap-regular text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
+                <div className="font[400] my-2 font-generalsans-r text-primary-brown  flex w-full flex-row gap-2 font-primary text-xl sm:flex-col sm:text-2xl md:text-3xl">
                   <h3>Outdated</h3>
                   <h3>Portals</h3>
                 </div>

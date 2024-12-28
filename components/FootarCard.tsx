@@ -59,7 +59,7 @@ const FootarCard = (props: Props) => {
             <div className="text-medium  text-lg md:text-2xl lg:text-[26px] ">
               I&apos;m an Employer, Let's talk business!
             </div>
-            <p className="mt-1 font-WhyteInktrap-regular  ">
+            <p className="mt-1 font-generalsans-r  ">
               Open access for overseas companies
             </p>
           </div>

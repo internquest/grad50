@@ -31,49 +31,60 @@
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 }
 
-@layer components{
-    .border-primary-brown{
-      border-color:#462b34 ;
+@layer components {
+    .border-primary-brown {
+        border-color: #462b34;
     }
-    .bg-custom-violet{
-      background-color:#d4b6ec ;
+
+    .bg-custom-violet {
+        background-color: #d4b6ec;
     }
-    .fill-custom-violet{
-      fill:#d4b6ec ;
+
+    .fill-custom-violet {
+        fill: #d4b6ec;
     }
-    .bg-custom-blue{
-      @apply bg-[rgb(185,200,255)]
+
+    .bg-custom-blue {
+        @apply bg-[rgb(185_200_255)]
     }
-    .fill-custom-blue{
-      @apply fill-[#b9c8ff]
+
+    .fill-custom-blue {
+        @apply fill-[#b9c8ff]
     }
-    .bg-custom-red{
-      @apply bg-[#fcb2b2]
+
+    .bg-custom-red {
+        @apply bg-[#fcb2b2]
     }
-    .fill-custom-red{
-      @apply fill-[#fcb2b2]
+
+    .fill-custom-red {
+        @apply fill-[#fcb2b2]
     }
-    
-    .bg-custom-green{
-      background-color: rgb(182, 236, 204);
+
+    .bg-custom-green {
+        background-color: rgb(182, 236, 204);
     }
-    .fill-custom-green{
-      fill: #b6eccc;
+
+    .fill-custom-green {
+        fill: #b6eccc;
     }
-    .bg-primary-brown{
-      background-color: #462b34;
+
+    .bg-primary-brown {
+        background-color: #462b34;
     }
-    .fill-primary-brown{
-      fill: #462b34;
+
+    .fill-primary-brown {
+        fill: #462b34;
     }
-    .bg-custom-yellow{
-      @apply bg-[#fff5b7]
+
+    .bg-custom-yellow {
+        @apply bg-[#fff5b7]
     }
-    .fill-custom-yellow{
-      @apply fill-[#fff5b7]
+
+    .fill-custom-yellow {
+        @apply fill-[#fff5b7]
     }
-  }
-  
+}
+
 
 
 .bg-custom-bg {
@@ -170,17 +181,20 @@
 }
 
 /* Add this CSS to your stylesheet */
-.slick-dots {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+
+
+@layer components {
+    .slick-dots {
+
+        @apply relative flex gap-5 md:gap-0 md:justify-between list-none p-0
+    }
+
+    .slick-dots li {
+        @apply w-min md:flex-[1];
+    }
 }
 
-.slick-dots li {
-    flex: 1;
-}
+
 
 .slick-dots li:not(:last-child) .before {
     display: none;
@@ -801,13 +815,12 @@ body {
 
 
 /* hying-components */
-.carousel_zigzag{
+.carousel_zigzag {
     background-color: transparent;
-      background-image:url(../public/hyring-approach/arrowup.svg);
-      background-position: 100% 100%;
-      background-repeat: repeat-x;
-      background-size: 5% auto;
-      border: 0;
-      rotate: 180deg;
-  }
-  
+    background-image: url(../public/hyring-approach/arrowup.svg);
+    background-position: 100% 100%;
+    background-repeat: repeat-x;
+    background-size: 5% auto;
+    border: 0;
+    rotate: 180deg;
+}

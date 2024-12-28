@@ -16,13 +16,13 @@ const Footer = (props: Props) => {
   return (
     <div className="relative my-10 z-0">
       {/* there is another dive to applied here */}
-      <div className="my-10 flex flex-col gap-5 px-10 font-WhyteInktrap-regular md:hidden">
+      <div className="my-10 flex flex-col gap-5 px-10 font-generalsans-r md:hidden">
         <FootarCard heading=" I&apos;m a Job Seeker, Let&apos;s work together!" className="bg-custom-green" />
         <FootarCard subheading="Open access for overseas companies" heading=" I&apos;m an Employer, Let's talk business!" className="bg-custom-blue" />
 
       </div>
       {/* this above  */}
-      <div className="footer relative mx-auto my-0 mt-10 h-full w-[95vw] max-w-[1800px] rounded-[30px] border-2 border-primary-brown pb-2 pt-10 font-WhyteInktrap-regular md:mt-60 md:pt-20 xl:h-[488px]">
+      <div className="footer relative mx-auto my-0 mt-10 h-full w-[95vw] max-w-[1800px] rounded-[30px] border-2 border-primary-brown pb-2 pt-10 font-generalsans-r md:mt-60 md:pt-20 xl:h-[488px]">
         <div className="absolute -top-40  left-0 right-0 z-10 hidden  flex-col items-center justify-center gap-5 md:flex lg:-top-40 lg:flex-row lg:gap-12 xl:gap-20      ">
           <div className="undefined group footer_adjust cursor-pointer  lg:w-[40%]  relative  ">
             <div className="item-start group justify-start  border-2 bg-white  border-primary-brown bg-custom-green  rounded-lg   w-full flex  items-center relative z-10 ">
@@ -61,7 +61,7 @@ const Footer = (props: Props) => {
                   <div className="text-medium  text-lg md:text-2xl lg:text-[26px] ">
                     I&apos;m a Job Seeker, Let&apos;s work together!
                   </div>
-                  <p className="mt-1 font-WhyteInktrap-regular  ">
+                  <p className="mt-1 font-generalsans-r  ">
                     Invitation-only exclusive access
                   </p>
                 </div>
@@ -138,7 +138,7 @@ const Footer = (props: Props) => {
                   <div className="text-medium  text-lg md:text-2xl lg:text-[26px] ">
                     I&apos;m an Employer, Let's talk business!
                   </div>
-                  <p className="mt-1 font-WhyteInktrap-regular  ">
+                  <p className="mt-1 font-generalsans-r  ">
                     Open access for overseas companies
                   </p>
                 </div>
@@ -189,7 +189,7 @@ const Footer = (props: Props) => {
               height={100}
               alt="image"
             />
-            <p className="mb-0 mt-5 max-lg:block hidden l text-center font-WhyteInktrap-regular text-xl xs:block sm:mb-10">
+            <p className="mb-0 mt-5 max-lg:block hidden l text-center font-generalsans-r text-xl xs:block sm:mb-10">
               Meet the new gold standard in contract Hyring
             </p>
           </div>
@@ -205,15 +205,15 @@ const Footer = (props: Props) => {
                 alt="image"
               />
             </div>
-            <p className="mb-0 mt-5 lg:block hidden text-start font-WhyteInktrap-regular text-xl xs:block sm:mb-10">
+            <p className="mb-0 mt-5 lg:block hidden text-start font-generalsans-r text-xl xs:block sm:mb-10">
               Meet the new gold standard in contract Hyring
             </p>
           </div>
           {/* on hover the bangalore it should show the p */}
           <div className="max-sm:my-5 max-sm:flex hidden mb-16 flex-1 flex-col gap-y-5 ">
-            <h2 className="text-[22px] font-WhyteInktrap-medium">Location</h2>
+            <h2 className="text-[22px] font-generalsans-m">Location</h2>
             <div className="group">
-              <p className="font-WhyteInktrap-regular text-lg group-hover:opacity-0 transition-opacity">
+              <p className="font-generalsans-r text-lg group-hover:opacity-0 transition-opacity">
                 Bangalore
               </p>
               <p className="mt-2 min-w-[169px] text-sm/[17px] font-[350] text-[#826770] ">
@@ -221,43 +221,43 @@ const Footer = (props: Props) => {
               </p>
             </div>
             <div>
-              <p className="font-WhyteInktrap-regular text-lg">Chennai</p>
+              <p className="font-generalsans-r text-lg">Chennai</p>
               <p className="mt-2 min-w-[169px] text-sm/[17px] font-[350] text-[#826770] ">
                 TheHive, Level 3, VR Mall, Anna Nagar, Chennai
               </p>
             </div>
           </div>
           <div className="max-sm:my-5  mb-16 flex flex-1 flex-col gap-y-5">
-            <h1 className="text-[22px] font-WhyteInktrap-medium">Company</h1>
+            <h1 className="text-[22px] font-generalsans-m">Company</h1>
             <Link href={"/why-india"}>
-              <p className="font-WhyteInktrap-regular text-lg hover:opacity-70">
+              <p className="font-generalsans-r text-lg hover:opacity-70">
                 Why Inda
               </p>
             </Link>
             <Link href={"/pricing"}>
               {" "}
-              <p className="font-WhyteInktrap-regular text-lg hover:opacity-70">
+              <p className="font-generalsans-r text-lg hover:opacity-70">
                 Pricing
               </p>
             </Link>
             <Link href={"/contact-us"}>
               {" "}
-              <p className="font-WhyteInktrap-regular whitespace-nowrap text-lg hover:opacity-70">
+              <p className="font-generalsans-r whitespace-nowrap text-lg hover:opacity-70">
                 Contaact us
               </p>
             </Link>
             <Link href={"/about-us"}>
               {" "}
-              <p className="font-WhyteInktrap-regular whitespace-nowrap text-lg hover:opacity-70">
+              <p className="font-generalsans-r whitespace-nowrap text-lg hover:opacity-70">
                 About Hyring
               </p>
             </Link>
           </div>
           <div className="max-sm:my-5 overflow-hidden h-full max-sm:hidden  flex mb-16 flex-1 flex-col justify-start gap-y-5 ">
-            <h2 className="text-[22px] font-WhyteInktrap-medium  ">Location</h2>
+            <h2 className="text-[22px] font-generalsans-m  ">Location</h2>
 
             <div className="group">
-              <p className="cursor-pointer  font-WhyteInktrap-regular text-lg hover:opacity-70">
+              <p className="cursor-pointer  font-generalsans-r text-lg hover:opacity-70">
                 Bangalore
               </p>
               <p className="mt-2 max-w-[130px] hidden group-hover:opacity-100 overflow-hidden group-hover:flex text-sm/[17px] font-[350] text-[#826770] ">
@@ -265,7 +265,7 @@ const Footer = (props: Props) => {
               </p>
             </div>
             <div className="group">
-              <p className="cursor-pointer font-WhyteInktrap-regular text-lg hover:opacity-70">
+              <p className="cursor-pointer font-generalsans-r text-lg hover:opacity-70">
                 Chennai
               </p>
               <p className="mt-2 max-w-[100px] hidden group-hover:opacity-100 overflow-hidden group-hover:flex text-sm/[17px] font-[350] text-[#826770] ">
@@ -275,7 +275,7 @@ const Footer = (props: Props) => {
           </div>
           <div className="max-sm:hidden flex flex-col gap-y-12">
             <div className="flex flex-col gap-y-7">
-              <h2 className="text-[22px] font-WhyteInktrap-medium">Social</h2>
+              <h2 className="text-[22px] font-generalsans-m">Social</h2>
               <div className="flex items-center gap-5">
                 <Link href={""}>
                   <div className="w-[36px] cursor-pointer   relative  ">
@@ -529,25 +529,25 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        {/* <div className="pb-[5px] ml-16 mr-16 mt-0 border-t-[1px] border-solid border-[#593a25] pt-[8px] font-WhyteInktrap-regular xxs:mt-10 lg:ml-24 lg:mr-24 xl:mt-6"> */}
+        {/* <div className="pb-[5px] ml-16 mr-16 mt-0 border-t-[1px] border-solid border-[#593a25] pt-[8px] font-generalsans-r xxs:mt-10 lg:ml-24 lg:mr-24 xl:mt-6"> */}
 
         <div className=""></div>
         <div className=""></div>
-        <div className="sm:mt-10 pb-[5px] ml-16 mr-16 mt-0 border-t-[1px] border-solid border-[#593a25] pt-[8px] font-WhyteInktrap-regular  lg:ml-24 lg:mr-24 xl:mt-6">
+        <div className="sm:mt-10 pb-[5px] ml-16 mr-16 mt-0 border-t-[1px] border-solid border-[#593a25] pt-[8px] font-generalsans-r  lg:ml-24 lg:mr-24 xl:mt-6">
           <div className="mt-2 flex flex-col justify-between  gap-y-5 md:mt-0 md:flex-row md:gap-y-0">
             <div className="flex flex-row items-center justify-around  gap-0 md:justify-center md:gap-3 lg:gap-8">
               <Link href={"/privacy-policy"}>
-                <p className="cursor-pointer font-WhyteInktrap-regular text-sm hover:opacity-70 md:text-base lg:text-lg">
+                <p className="cursor-pointer font-generalsans-r text-sm hover:opacity-70 md:text-base lg:text-lg">
                   Privacy Policy
                 </p>
               </Link>
               <Link href={'/terms-conditions'}>
-                <p className="cursor-pointer font-WhyteInktrap-regular text-sm hover:opacity-70 md:text-base lg:text-lg">
+                <p className="cursor-pointer font-generalsans-r text-sm hover:opacity-70 md:text-base lg:text-lg">
                   Terms & Conditions
                 </p>
               </Link>
             </div>
-            <div className="flex justify-center font-WhyteInktrap-regular text-sm md:text-base lg:text-lg">
+            <div className="flex justify-center font-generalsans-r text-sm md:text-base lg:text-lg">
               Copyright © 2023 Hyring. All rights reserved.
             </div>
           </div>

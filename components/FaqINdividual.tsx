@@ -132,7 +132,7 @@ const FaqINdividual = ({ question, answer, indexed, open, setOpen, id }: faq) =>
             <motion.div className={`w-full bg-white text-[rgba(0,0,0,.87)] shadow-none relative transition-[margin] duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)]`}>
                 <div onClick={() => handleClick()} className='border-b-[2px] border-[rgb(70,43,52)] flex cursor-pointer'>
                     <div className='ml-[8px] flex flex-grow my-[12px] mx-0'>
-                        <p className='lg:text-[28px] lg:py-4 leading-[40px] uppercase font-WhyteInktrap-medium font-normal '>{question}</p>
+                        <p className='lg:text-[28px] lg:py-4 leading-[40px] uppercase font-generalsans-m font-normal '>{question}</p>
                     </div>
                     <div className='flex text-[rgba(0,0,0,0.54)] justify-center items-center transition-transform duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)] '>
                         {

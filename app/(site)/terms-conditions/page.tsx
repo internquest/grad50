@@ -7,16 +7,16 @@ const page = (props: Props) => {
     <div className=" md:w-[95vw] text-primary-brown mx-auto mb-20 mt-3 md:mt-16 max-w-[1800px] md:flex md:gap-0 lg:gap-10">
       <div className="h-fit min-w-[350px]text-primary-brown hidden md:flex">
         <div className="undefined  relative  z-10">
-          <div className="flex flex-col  text-primary-brown px-4 z-10 py-5 font-WhyteInktrap-regular !justify-start !items-start  border-2 border-primary-brown w-full h-full bg-[#FFF9F3] rounded-[10px] w-[95vw] mx-auto flex justify-center items-center relative z-1 ">
-            <div className="font-WhyteInktrap-medium mb-2 text-xl md:text-2xl lg:text-3xl mr-8">
+          <div className="flex flex-col  text-primary-brown px-4 z-10 py-5 font-generalsans-r !justify-start !items-start  border-2 border-primary-brown w-full h-full bg-[#FFF9F3] rounded-[10px] w-[95vw] mx-auto flex justify-center items-center relative z-1 ">
+            <div className="font-generalsans-m mb-2 text-xl md:text-2xl lg:text-3xl mr-8">
               Terms &amp; Conditions
             </div>
             <div className="h-full overflow-auto">
               <div className="h-full">
-                <p className="text-xl mb-2.5 font-WhyteInktrap-medium">
+                <p className="text-xl mb-2.5 font-generalsans-m">
                   For Job Seekers
                 </p>
-                <ul className="text-sm font-WhyteInktrap-regular ml-4 flex flex-col gap-1.5 mb-5">
+                <ul className="text-sm font-generalsans-r ml-4 flex flex-col gap-1.5 mb-5">
                   <a href="/terms-conditions#Eligibility">
                     <li className="cursor-pointer">1. Eligibility</li>
                   </a>
@@ -60,10 +60,10 @@ const page = (props: Props) => {
                     </li>{" "}
                   </a>
                 </ul>
-                <p className="text-xl mb-2.5 font-WhyteInktrap-medium">
+                <p className="text-xl mb-2.5 font-generalsans-m">
                   For Companies
                 </p>
-                <ul className="text-sm font-WhyteInktrap-regular ml-4 flex flex-col gap-1.5">
+                <ul className="text-sm font-generalsans-r ml-4 flex flex-col gap-1.5">
                   <a href="/terms-conditions#eligibility">
                     <li className="cursor-pointer">1. Eligibility</li>
                   </a>
@@ -115,21 +115,21 @@ const page = (props: Props) => {
           </div>
           <div
             className="min-w-[200px] left-2 top-2 -z-10 w-full h-full rounded-[10px]  bg-primary-brown   absolute  "
-            
+
           ></div>
         </div>
       </div>
-      <div className="font-WhyteInktrap-regular w-[95vw] mx-auto">
-        <p className="font-WhyteInktrap-medium text-4xl mb-5">
+      <div className="font-generalsans-r w-[95vw] mx-auto">
+        <p className="font-generalsans-m text-4xl mb-5">
           Hyring Terms &amp; Conditions
         </p>
-        <p className="text-lg font-WhyteInktrap-regularLight mb-5">
+        <p className="text-lg font-generalsans-rLight mb-5">
           EFFECTIVE DATE:{" "}
-          <span className="text-lg font-WhyteInktrap-medium">May 1, 2023</span>
+          <span className="text-lg font-generalsans-m">May 1, 2023</span>
         </p>
-        <p className="text-4xl font-WhyteInktrap-medium mb-3">Job Seekers</p>
+        <p className="text-4xl font-generalsans-m mb-3">Job Seekers</p>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="Eligibility">
+          <p className="font-generalsans-m text-lg mb-2" id="Eligibility">
             1. Eligibility:
           </p>
           <p>
@@ -138,7 +138,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="User-Account">
+          <p className="font-generalsans-m text-lg mb-2" id="User-Account">
             2. User Account:
           </p>
           <p>
@@ -150,7 +150,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="Job-Search">
+          <p className="font-generalsans-m text-lg mb-2" id="Job-Search">
             3. Job Search:
           </p>
           <p>
@@ -163,7 +163,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="Remote-Work">
+          <p className="font-generalsans-m text-lg mb-2" id="Remote-Work">
             4. Remote Work:
           </p>
           <p>
@@ -175,7 +175,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="Payment">
+          <p className="font-generalsans-m text-lg mb-2" id="Payment">
             5. Payment:
           </p>
           <p>
@@ -187,7 +187,7 @@ const page = (props: Props) => {
         </div>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="Intellectual-Property"
           >
             6. Intellectual Property:
@@ -201,7 +201,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="User-Conduct">
+          <p className="font-generalsans-m text-lg mb-2" id="User-Conduct">
             7. User Conduct:
           </p>
           <p>
@@ -213,7 +213,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="Indemnification">
+          <p className="font-generalsans-m text-lg mb-2" id="Indemnification">
             8. Indemnification:
           </p>
           <p>
@@ -226,7 +226,7 @@ const page = (props: Props) => {
         </div>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="Disclaimer-of-Warranties"
           >
             9. Disclaimer of Warranties:
@@ -241,7 +241,7 @@ const page = (props: Props) => {
         </div>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="Limitation-of-Liability"
           >
             10. Limitation of Liability:
@@ -255,7 +255,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="mb-4">
-          <p className="font-WhyteInktrap-medium text-lg mb-2" id="Governing-Law">
+          <p className="font-generalsans-m text-lg mb-2" id="Governing-Law">
             11. Governing Law:
           </p>
           <p>
@@ -268,7 +268,7 @@ const page = (props: Props) => {
         </div>
         <div className="mb-4">
           <p
-            className="font-WhyteInktrap-medium text-lg mb-2"
+            className="font-generalsans-m text-lg mb-2"
             id="Changes-to-Terms-and-Conditions"
           >
             12. Changes to Terms and Conditions:
@@ -281,10 +281,10 @@ const page = (props: Props) => {
             acceptance of the revised terms and conditions.
           </p>
         </div>
-        <div className="font-WhyteInktrap-regular">
-          <p className="text-4xl font-WhyteInktrap-medium mb-3">Companies</p>
+        <div className="font-generalsans-r">
+          <p className="text-4xl font-generalsans-m mb-3">Companies</p>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="eligibility">
+            <p className="font-generalsans-m text-lg mb-2" id="eligibility">
               1. Eligibility:
             </p>
             <p>
@@ -293,7 +293,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="user-account">
+            <p className="font-generalsans-m text-lg mb-2" id="user-account">
               2. User Account:
             </p>
             <p>
@@ -305,7 +305,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="job-posting">
+            <p className="font-generalsans-m text-lg mb-2" id="job-posting">
               3. Job Postings:
             </p>
             <p>
@@ -318,7 +318,7 @@ const page = (props: Props) => {
           </div>
           <div className="mb-4">
             <p
-              className="font-WhyteInktrap-medium text-lg mb-2"
+              className="font-generalsans-m text-lg mb-2"
               id="candidate-selection"
             >
               4. Candidate Selection:
@@ -332,7 +332,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="remote-work">
+            <p className="font-generalsans-m text-lg mb-2" id="remote-work">
               5. Remote Work:
             </p>
             <p>
@@ -344,7 +344,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="payment">
+            <p className="font-generalsans-m text-lg mb-2" id="payment">
               6. Payment:
             </p>
             <p>
@@ -356,7 +356,7 @@ const page = (props: Props) => {
           </div>
           <div className="mb-4">
             <p
-              className="font-WhyteInktrap-medium text-lg mb-2"
+              className="font-generalsans-m text-lg mb-2"
               id="intellectual-property"
             >
               7. Intellectual Property:
@@ -370,7 +370,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="user-conduct">
+            <p className="font-generalsans-m text-lg mb-2" id="user-conduct">
               8. User Conduct:
             </p>
             <p>
@@ -382,7 +382,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="indemnification">
+            <p className="font-generalsans-m text-lg mb-2" id="indemnification">
               9. Indemnification:
             </p>
             <p>
@@ -395,7 +395,7 @@ const page = (props: Props) => {
           </div>
           <div className="mb-4">
             <p
-              className="font-WhyteInktrap-medium text-lg mb-2"
+              className="font-generalsans-m text-lg mb-2"
               id="disclaimer-of-warranties"
             >
               10. Disclaimer of Warranties:
@@ -410,7 +410,7 @@ const page = (props: Props) => {
           </div>
           <div className="mb-4">
             <p
-              className="font-WhyteInktrap-medium text-lg mb-2"
+              className="font-generalsans-m text-lg mb-2"
               id="limitation-of-liability"
             >
               11. Limitation of Liability:
@@ -424,7 +424,7 @@ const page = (props: Props) => {
             </p>
           </div>
           <div className="mb-4">
-            <p className="font-WhyteInktrap-medium text-lg mb-2" id="governing-law">
+            <p className="font-generalsans-m text-lg mb-2" id="governing-law">
               12. Governing Law:
             </p>
             <p>
@@ -437,7 +437,7 @@ const page = (props: Props) => {
           </div>
           <div className="mb-4">
             <p
-              className="font-WhyteInktrap-medium text-lg mb-2"
+              className="font-generalsans-m text-lg mb-2"
               id="changes-to-terms-and-conditions"
             >
               13. Changes to Terms and Conditions:
