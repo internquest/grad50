@@ -29,7 +29,7 @@ const PromiseComponent = (props: Props) => {
               <Image src={props.image1 || ''} width={800 / 2} height={400 / 2} className="w-fit" alt="image" />
               {/* main image */}
             </div>
-            <p className="sm:text-xl md:text-lg lg:text-2xl xl3:text-3xl font-medium   text-primary-brown  xl4:text-5xl font-cabiet-b mt-3  leading-5 pt-8 md:pt-10 lg:pt-16 xl3:pt-24">
+            <p className="text-xl md:text-lg lg:text-2xl xl3:text-3xl font-medium   text-primary-brown  xl4:text-5xl font-cabiet-b mt-3  !leading-[1.2] pt-8 md:pt-10 lg:pt-16 xl3:pt-24">
               {props.title}
             </p>
             <p className="text-base !leading-[2] tracking-[.015em] mt-2 md:text-[14px] lg:text-lg xl4:text-[26px] xl4:pt-5 font-generalsans-m">
