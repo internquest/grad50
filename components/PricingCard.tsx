@@ -6,7 +6,7 @@ import pricing2 from "@/public/pricing2.svg";
 import logo1 from "@/public/navbar-hyting.svg";
 import square from "@/public/square.png";
 import { url } from "inspector";
-import smallyello from "@/public/yellow.svg";
+// import smallyello from "@/public/yellow.svg";
 import { twMerge } from "tailwind-merge";
 import ShineButton from "./ShineButton";
 type Props = {
@@ -16,7 +16,8 @@ type Props = {
   price?: string;
   pricedescription?: string;
   buttonText?: string
-  firsthover?: boolean;
+  hover?: boolean;
+  id: number;
 
   handlemousehover: (v: boolean) => void;
 };
@@ -53,26 +54,27 @@ const PricingCard = (props: Props) => {
             <span className="text-base">{props.pricedescription}</span>
           </div>
           <div className="md:mt-5 group/border lg:mt-[27px]  h-[47px] w-fit cursor-pointer lg:h-[65px]  relative  ">
-            <ShineButton text={props.buttonText} firsthover={props.firsthover} />
+            <ShineButton text={props.buttonText} firsthover={props.hover} />
           </div>
         </div>
-        <div className="absolute -left-8 -top-8 scale-[.6] lg:scale-[0.9] ">
-          <Image
-            src={smallyello}
-            width={1500 / 2}
-            height={1200 / 2}
-            alt="image"
-            className="w-fit h-full animate-spin-slow object-cover"
-          />
-        </div>
-        <div className={`overflow-hidden absolute top-0  ${props.firsthover ? 'block' : 'hidden'}  rounded-[20px] w-full h-full   z-[-1]   animate-circleFill`}>
-          <svg width="283" height="265" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.9] bg-custom-blue mt-8 opacity-50 ">
+        {
+          props.hover &&
+          <div className="absolute -left-8 -top-8 scale-[.6] lg:scale-[0.9] ">
+
+            <svg width="74" height="74" fill="#FFF5B7" xmlns="http://www.w3.org/2000/svg" className={`${props.id === 1 ? 'fill-custom-yellow' : 'fill-custom-green'} w-fit h-full animate-spin-slow object-cover`} ><path d="m47.917 13.18 8.094-8.587-3.63 11.229a31 31 0 0 0 8.233 32.095l8.588 8.095-11.229-3.63a31 31 0 0 0-32.095 8.233l-8.094 8.587 3.63-11.228a31 31 0 0 0-8.234-32.096l-8.587-8.094 11.229 3.63a31 31 0 0 0 32.095-8.233Z" stroke="#462B34" stroke-width="2"></path></svg>
+
+
+          </div>
+        }
+
+        <div className={`overflow-hidden absolute top-0  ${props.hover ? 'block' : 'hidden'}  rounded-[20px] w-full h-full   z-[-1]   animate-circleFill`}>
+          <svg width="283" height="265" fill="none" xmlns="http://www.w3.org/2000/svg" className={`scale-[1.9] ${props.id === 1 ? 'bg-custom-blue' : 'bg-custom-yellow'} mt-8 opacity-50 `}>
             <g opacity="0.2" stroke="#462B34" stroke-width="0.5"><path d="M38.852 0v264.563M79.555 0v264.563M120.258 0v264.563M160.957 0v264.563M201.656 0v264.563M18.5 0v264.563M59.2 0v264.563M99.902 0v264.563M140.605 0v264.563M181.309 0v264.563M222.008 0v264.563M242.359 0v264.563M262.711 0v264.563M282.137 13.876H-.002M282.137 54.578H-.002M282.137 95.28H-.002M282.137 135.981H-.002M282.137 176.683H-.002M282.137 217.385H-.002M282.137 258.087H-.002M282.137 34.226H-.002M282.137 74.928H-.002M282.137 115.631H-.002M282.137 156.333H-.002M282.137 197.035H-.002M282.137 237.736H-.002"></path>
             </g>
           </svg>
         </div>
       </div>
-      <div className={`w-full h-full rounded-[20px] ${props.firsthover ? 'opacity-100' : 'opacity-0'} bg-primary-brown animate-circleFill z-[-10]x   top-[7px] left-[5px]    absolute  `}>
+      <div className={`w-full h-full rounded-[20px] ${props.hover ? 'opacity-100' : 'opacity-0'} bg-primary-brown animate-circleFill z-[-10]x   top-[7px] left-[5px]    absolute  `}>
 
       </div>
     </div>

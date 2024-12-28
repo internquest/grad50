@@ -29,8 +29,8 @@ const Page = () => {
           <div className="flex gap-7  basis-[20%] flex-col items-center xs:justify-around md:justify-around xs:flex-row md:!flex-col">
             {/* <div className="mt-3 max-w-[100vw] md:mt-20 mx-10"> */}
 
-            <PricingCard image1={pricing} title="Job Seeker" price="0" pricedescription="" buttonText="Join Whitelist" firsthover={firsthover} handlemousehover={handlemousehover} />
-            <PricingCard image1={pricing} title="Job Seeker" price="0" pricedescription="" buttonText="Join Whitelist" firsthover={secondhover} handlemousehover={handlemousehover2} />
+            <PricingCard image1={pricing} id={1} title="Job Seeker" price="0" pricedescription="" buttonText="Join Whitelist" hover={firsthover} handlemousehover={handlemousehover} />
+            <PricingCard image1={pricing} id={2} title="Job Seeker" price="0" pricedescription="" buttonText="Join Whitelist" hover={secondhover} handlemousehover={handlemousehover2} />
 
             {/* </div> */}
           </div>

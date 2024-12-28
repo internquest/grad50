@@ -760,3 +760,6 @@ body {
 .bg-text-primary {
     background-color: rgb(14, 15, 12);
 }
+.bg-custom-yellow{
+    background-color: #fff5b7;
+}
