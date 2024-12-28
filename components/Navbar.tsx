@@ -135,6 +135,8 @@ const Navbar = (props: Props) => {
                   </div>
                 </div> */}
                     </div>
+
+                    {/* menu bar */}
                     <div className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-[2px] border border-primary-brown bg-custom-green md:hidden  ">
                       <div
                         onClick={() => handlebar()}
@@ -172,6 +174,9 @@ const Navbar = (props: Props) => {
               style={{ left: "7px", top: "6px" }}
             ></div>
           </div>
+
+          {/* mobile menu */}
+
           <div className="overflow-hidden">
             <div
               className={`${show
@@ -182,7 +187,7 @@ const Navbar = (props: Props) => {
               <div
                 onClick={() => handlebar()}
                 className={`${show
-                  ? "flex flex-col gap-6   font-primaryMedium text-lg   "
+                  ? "flex flex-col gap-6   font-WhyteInktrap-medium text-lg   "
                   : "hidden font-primaryMedium text-lg  "
                   } `}
               >

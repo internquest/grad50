@@ -31,7 +31,7 @@ const ShineButton = (props: Props) => {
       >
         <div className={`w-[180px] lg:w-[220px] ${props.firsthover && 'bg-white'} h-[52px] lg:h-[62px]  bg-bg-primary-orange relative overflow-hidden rounded-[5px]  `}>
           <div className="mx-auto flex items-center  w-full h-full justify-center gap-1">
-            <div className="mr-1 font-medium text-lg btn-anim text-black md:text-lg">
+            <div className="mr-1 font-medium text-lg btn-anim font-generalsans-m text-black md:text-lg">
               {" "}
               {/* Set text color to black */}
               {props.text}

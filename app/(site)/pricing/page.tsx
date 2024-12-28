@@ -11,7 +11,7 @@ import Faqs from '@/components/Faqs';
 
 const Page = () => {
 
-  const [firsthover, setFirstHover] = useState(false);
+  const [firsthover, setFirstHover] = useState(true);
   const [secondhover, setSecondHover] = useState(false);
   const handlemousehover = (v: boolean) => {
     setFirstHover(v)
@@ -24,7 +24,7 @@ const Page = () => {
   return (
     <div>
       <div className="mt-5 lg:mt-20 mx-auto flex w-[95vw] flex-col items-center  max-w-[1800px]  my-0" id="pricing">
-        <div className="text-center my-5 md:my-10 w-full text-3xl md:text-4xl lg:text-[58px]  font-primaryBold pb-3">Pricing</div>
+        <div className="text-center my-5 md:my-10 w-full text-3xl md:text-4xl lg:text-[58px]  font-cabiet-b pb-3">Pricing</div>
         <div className="flex gap-5 flex-col w-full   md:flex-row">
           <div className="flex gap-7  basis-[20%] flex-col items-center xs:justify-around md:justify-around xs:flex-row md:!flex-col">
             {/* <div className="mt-3 max-w-[100vw] md:mt-20 mx-10"> */}
@@ -38,7 +38,7 @@ const Page = () => {
             <div className="undefined h-fit md:h-[720px] lg:h-[920px]   w-full cursor-pointer   relative  ">
               <div className="h-full  w-full border-2 bg-white rounded-[23px] border-primary-brown flex justify-center items-center relative z-[1] ">
                 <div className="w-full h-full p-3 md:px-5 lg:px-5 md:py-6">
-                  <Faqs />
+                  <Faqs firsthover={firsthover} secondhover={secondhover} />
                 </div>
               </div>
               <div className=" w-full h-full  rounded-[23px]  bg-primary-brown    absolute  " style={{ left: '9px', top: '11px' }}></div>

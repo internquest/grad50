@@ -1,6 +1,7 @@
 'use client'
 import React, { ReactElement, useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { useWindowSize } from '@uidotdev/usehooks'
 // import { styled } from '@mui/material/styles';
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 // import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
@@ -63,7 +64,7 @@ import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 
 type faq = {
     question?: string;
-    solution?: string;
+    answer: string[];
     indexed?: number;
     open: string;
     setOpen: Function;
@@ -72,8 +73,8 @@ type faq = {
 
 
 
-const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) => {
-    const faqanser = ['All-inclusive package', 'Save up to 50% of resource cost', 'Complete transparency on salary to candidates', 'Recruit Top 5% of Indian IT talent', 'Flexibility on contract (Min. 4 months)', 'Recognised as employee of the your company in Linkedin', 'Commitment to a Single Client Focus', 'Cool Offices Located Across India']
+const FaqINdividual = ({ question, answer, indexed, open, setOpen, id }: faq) => {
+
     // const [expanded, setExpanded] = useState<string | false>(false);
 
     // const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: Boolean) => {
@@ -84,7 +85,7 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
 
     // const [heihgtvalue, setHeightValue] = useState<number>(0)
     const [idval, setidval] = useState<string>("1")
-
+    const windowwidth = useWindowSize().width;
     const solref = useRef<HTMLDivElement>(null)
     const handleClick = () => {
         // console.log(solref.current?.id);
@@ -109,7 +110,7 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
                 ? `${solref.current.scrollHeight}px`
                 : '0px';
         }
-    }, [open])
+    }, [open, windowwidth])
     // useEffect(() => {
     //     if (open) {
     //         if (solref.current) {
@@ -124,13 +125,14 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
     //     }
     // }, [open])
     // console.log(open);
+    // console.log(question, answer);
 
     return (
         <>
             <motion.div className={`w-full bg-white text-[rgba(0,0,0,.87)] shadow-none relative transition-[margin] duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)]`}>
                 <div onClick={() => handleClick()} className='border-b-[2px] border-[rgb(70,43,52)] flex cursor-pointer'>
                     <div className='ml-[8px] flex flex-grow my-[12px] mx-0'>
-                        <p className='lg:text-[28px] lg:py-4 leading-[40px] uppercase font-normal '>benefit</p>
+                        <p className='lg:text-[28px] lg:py-4 leading-[40px] uppercase font-WhyteInktrap-medium font-normal '>{question}</p>
                     </div>
                     <div className='flex text-[rgba(0,0,0,0.54)] justify-center items-center transition-transform duration-[150ms] ease-[cubic-bezier(0.4,0,0.2,1)] '>
                         {
@@ -151,10 +153,10 @@ const FaqINdividual = ({ question, solution, indexed, open, setOpen, id }: faq) 
                         <div className='w-full'>
                             <div className='py-0 px-4 border-b-[2px] border-[rgb(70,43,52)] '>
                                 {
-                                    faqanser.map((faqanser, index) => {
+                                    answer.map((faqanser, index) => {
                                         return (
                                             <div className="text-base lg:text-[22px] flex items-center gap-3 font-primary font-normal my-4 lg:my-7 "><svg width="20" height="20" fill="#B9C8FF" xmlns="http://www.w3.org/2000/svg"><path d="M12.587 12.771a12.21 12.21 0 0 0-2.612 4.078 12.286 12.286 0 0 0-2.748-3.98 11.897 11.897 0 0 0-4.063-2.618A12.211 12.211 0 0 0 7.13 7.503a12.212 12.212 0 0 0 2.609-4.067 11.93 11.93 0 0 0 2.759 3.977 12.582 12.582 0 0 0 4.076 2.602 12.212 12.212 0 0 0-3.987 2.756Z" stroke="#462B34" stroke-width="1.567"></path></svg>
-                                                <div className="">{faqanser}</div></div>
+                                                <div className="font-generalsans-m">{faqanser}</div></div>
                                         )
                                     }
                                     )
