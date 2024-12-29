@@ -49,38 +49,39 @@ const Hero = (props: Props) => {
     <div className="  max-w-[100vw] w-full  z-0 ">
       {/* <Heromain /> */}
       <div className="w-[100vw]  mt-3 md:mt-14 ">
-        <div className="mx-auto  mb-3 md:mb-20 w-full max-w-[92vw]">
-          <div className="mx-auto my-0 flex pl-6 lg:pl-12 gap-3 max-w-[1800px] flex-col md:flex-row">
-            <div className="w-full md:w-[45%] mt-6 ">
-              <h1 className=" text-primary-brown   font-cabiet-b text-4xl  text-start  w-full lg:text-[44px] !leading-[1.6] xl:text-5xl 2xl:text-6xl pt-6 tracking-[-.01em]">
-                Meet the new<p className="relative mx-2 inline-block lg:mx-3">
-                  <span className="absolute -left-[4px] inset-0 top-3 scale-[1.2] md:left-[3px] md:top-3 lg:left-[5px] lg:top-5 md:scale-[1.3] lg:scale-[1.5]  ">
-                    <Image
-                      src={circle}
-                      width={100}
-                      className="w-fit h-fit"
-                      height={100}
-                      alt={"image"}
-                    />
-                  </span>
-                  gold
-                </p>
-                <br className="hidden lg:block" />
-                standard in
-                <span className="text-secondary-orange"> new <br />
-                  grad opportunities</span>
-              </h1>
-              <div className="mb-8  mt-5  font-generalsans-m text-xl  font-normal lg:mb-[60px]  text-start lg:text-2xl text-[#462B34D9] !leading-[2]">
-                Facilitating meaningful connection between
-                exceptional student talent and dream
-                opportunities in tech
+        <div className="mx-auto  mb-3 md:mb-20 w-full ">
+          <div className="mx-auto my-0 flex pl-6 pr-3 md:pr-0 lg:pl-[60px] xl:pl-[80px] gap-8 max-w-[1800px] flex-col md:flex-row">
+            <div className="w-full md:w-[45%] flex justify-start items-center flex-col mt-6 ">
+              <div className="">
+                <h1 className=" text-primary-brown  max-w-[401px] font-cabiet-b text-4xl  text-start  w-full lg:text-[48px] !leading-[1.7]  pt-6 tracking-[-.01em]">
+                  Meet the new<p className="relative mx-2 inline-block lg:mx-3">
+                    <span className="absolute -left-[4px] inset-0 top-3 scale-[1.2] md:left-[3px] md:top-4 lg:left-[5px] lg:top-6 md:scale-[1.3] lg:scale-[1.5]  ">
+                      <Image
+                        src={circle}
+                        width={100}
+                        className="w-fit h-fit"
+                        height={100}
+                        alt={"image"}
+                      />
+                    </span>
+                    gold
+                  </p>
+                  <br className="hidden lg:block" />
+                  standard in
+                  <span className="text-secondary-orange"> new <br />
+                    grad opportunities</span>
+                </h1>
+                <div className="mb-8  mt-[16px] max-w-[490px] font-generalsans-m text-xl  font-normal lg:mb-[60px]  text-start lg:text-2xl text-[#462B34D9] !leading-[2.1]">
+                  Facilitating meaningful connection between
+                  exceptional student talent and dream
+                  opportunities in tech
+                </div>
+
               </div>
-
-
             </div>
 
             {/* leaving the space to put the animation down */}
-            <div className=" bg-green  flex w-full md:w-[55%] items-center md:pl-10 pr-4 justify-center  ">
+            <div className=" bg-green  flex w-full md:w-[55%] items-center self-end  justify-center  ">
               <div className="relative w-full ">
                 <div className="h-full w-full">
                   <div
@@ -89,23 +90,43 @@ const Hero = (props: Props) => {
                     aria-label="animation"
                     tabIndex={0}
                     style={{
-                      width: "100%",
-                      height: "100%",
+
                       overflow: "hidden",
                       margin: "0px auto",
                       outline: "none",
                     }}
-                    className=""
+                    className=" flex justify-center md:block"
                   >
-                    <div className="  h-[400px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] ">
-
-                      <Image
-                        src='https://ik.imagekit.io/ysp4xwrz9/g50/Group%2018-min.svg'
-                        className="w-full h-full aspect-square"
-                        fill={true}
-                        alt="image"
-                      />
-                    </div>
+                    {/* <div className="  w-full h-full"> */}
+                    <Image
+                      src='https://ik.imagekit.io/ysp4xwrz9/g50/Group%2018-min.svg'
+                      className=" md:hidden "
+                      width={450}
+                      height={450}
+                      alt="image"
+                    />
+                    <Image
+                      src='https://ik.imagekit.io/ysp4xwrz9/g50/Group%2018-min.svg'
+                      className="hidden md:block lg:hidden"
+                      width={450}
+                      height={450}
+                      alt="image"
+                    />
+                    <Image
+                      src='https://ik.imagekit.io/ysp4xwrz9/g50/Group%2018-min.svg'
+                      className="hidden lg:block xl:hidden"
+                      width={500}
+                      height={500}
+                      alt="image"
+                    />
+                    <Image
+                      src='https://ik.imagekit.io/ysp4xwrz9/g50/Group%2018-min.svg'
+                      className="hidden xl:block"
+                      width={600}
+                      height={600}
+                      alt="image"
+                    />
+                    {/* </div> */}
                   </div>
                 </div>
               </div>
@@ -256,6 +277,45 @@ const Hero = (props: Props) => {
         <MainMarquee />
       </div>
       <PromiseMainComponent />
+
+
+      <div className=" select-none scale-[1.4] xs:scale-[1.4] sm:scale-[1.25] md:scale-[1.1]  h-[70vh] !cursor-default">
+        <div role="button" aria-label="animation" tabIndex={0} style={{ width: '100%', height: '100%', overflow: 'hidden', margin: '0px auto', outline: 'none' }} >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 906" width="1440" height="906" preserveAspectRatio="xMidYMid meet" style={{ width: '100%', height: '100%', transform: 'translate3d(0px, 0px, 0px)', contentVisibility: 'visible', }}>
+            <defs>
+              <clipPath id="__lottie_element_116"><rect width="1440" height="906" x="0" y="0"></rect></clipPath>
+              <clipPath id="__lottie_element_127"><path d="M0,0 L841,0 L841,600 L0,600z"></path></clipPath>
+              <clipPath id="__lottie_element_163"><path d="M0,0 L108,0 L108,120 L0,120z"></path></clipPath>
+              <clipPath id="__lottie_element_156"><path d="M0,0 L108,0 L108,120 L0,120z"></path></clipPath>
+              <clipPath id="__lottie_element_149"><path d="M0,0 L108,0 L108,120 L0,120z"></path></clipPath>
+            </defs>
+            <g clip-path="url(#__lottie_element_116)">
+              <g clip-path="url(#__lottie_element_127)" style={{ display: 'block', }} transform="matrix(1,0,0,1,351.5,141)" opacity="1">
+                <g style={{ display: 'block' }} transform="matrix(1,0,0,1,163.9969940185547,26.496999740600586)" opacity="1"><image width="416px" height="415px" preserveAspectRatio="xMidYMid slice" xlinkHref="./circlelotter.png"></image></g>
+                <g style={{ display: 'block' }} transform="matrix(1,0,0,1,762.9990234375,171.49899291992188)" opacity="1"><image width="73px" height="165px" preserveAspectRatio="xMidYMid slice" xlinkHref="./lotterhandle.png"></image></g>
+                <g style={{ display: 'block' }} transform='matrix(1,0,0,1,-0.25,130.75900268554688)' opacity="1"><image width="781px" height="449px" preserveAspectRatio="xMidYMid slice" xlinkHref='./bg-lottie.png'></image></g>
+                <g className="ai" clipPath="url(#__lottie_element_163)" style={{ display: 'block' }} transform="matrix(1,0,0,1,96,225.5)" opacity="1">
+                  <g className="ai animate-number-scale" style={{ display: 'block' }} transform="matrix(1,0,0,1,4,-1032)" opacity="1">
+                    <image width="108px" height="1456px" preserveAspectRatio="xMidYMid slice" href="./numbersscale.png"></image>
+                  </g>
+                </g>
+                <g className="ai" clip-path="url(#__lottie_element_156)" style={{ display: 'block' }} transform="matrix(1,0,0,1,308,225.5)" opacity="1">
+                  <g className="ai animate-number-scale" style={{ display: 'block' }} transform="matrix(1,0,0,1,4,-1032)" opacity="1">
+                    <image width="108px" height="1456px" preserveAspectRatio="xMidYMid slice" href="./numbersscale.png"></image>
+                  </g>
+                </g>
+                <g className="ai" clip-path="url(#__lottie_element_149)" style={{ display: 'block' }} transform="matrix(1,0,0,1,524,225.5)" opacity="1">
+                  <g className="ai animate-number-scale" style={{ display: 'block' }} transform="matrix(1,0,0,1,4,-1032)" opacity="1">
+                    <image width="108px" height="1456px" preserveAspectRatio="xMidYMid slice" href="./numbersscale.png"></image>
+                  </g>
+                </g>
+              </g>
+
+            </g>
+          </svg>
+        </div>
+      </div>
+
     </div>
   );
 };

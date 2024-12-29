@@ -23,8 +23,22 @@ const config: Config = {
         'spin-circle-slow': 'spin 10s linear infinite',
         'scale-in-out': ' scaleInOut 3s ease-in-out infinite alternate',
         spin: 'spin 5s linear infinite',
+        'number-scale': 'moveScale 2s linear infinite'
+
       },
       keyframes: {
+
+        moveScale: {
+          '0%': {
+            transform: 'matrix(1,0,0,1,4,0)'
+          },
+          '50%': {
+            transform: 'matrix(1,0,0,1,4,-1362)'
+          },
+          '100%': {
+            transform: 'matrix(1,0,0,1,4,-984)'
+          }
+        },
         typedjsBlink: {
           '0%': { opacity: '1' },
           '50%': { opacity: '0' },

@@ -17,7 +17,7 @@ const PromiseComponent = (props: Props) => {
 
         <div
 
-          className={twMerge(" bg-[#b6eccc] z-10       w-[290px] xs:w-[340px] sm:w-[400px] md:w-[340px] lg:!w-[500px] 2xl:!w-[610px] 4xl:w-[650px] !justify-start border-2  rounded-[16px] border-primary-brown flex justify-center items-center relative   ", props.className)}
+          className={twMerge(" bg-[#b6eccc] z-10       w-[290px] xs:w-[340px] sm:w-[400px] md:w-[340px] lg:!w-[500px]  !justify-start border-2  rounded-[16px] border-primary-brown flex justify-center items-center relative   ", props.className)}
         >
           <div className="scale-[0.6] md:scale-[.7] lg:scale-[0.9] xl4:scale-[1] absolute -top-8 -right-8  ">
             {/* start */}
@@ -38,7 +38,7 @@ const PromiseComponent = (props: Props) => {
           </div>
         </div>
         <div
-          className="w-[290px] xs:w-[340px] sm:w-[400px] md:w-[340px] lg:!w-[500px] 2xl:!w-[610px] xl4:w-[650px]
+          className="w-[290px] xs:w-[340px] sm:w-[400px] md:w-[340px] lg:!w-[500px] 
         
           rounded-[16px]  bg-primary-brown inset-0  top-2 left-2   absolute  -z-10  "
         ></div>
