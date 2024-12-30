@@ -31,6 +31,8 @@ import Marquee from "react-fast-marquee";
 import MainMarquee from "./MainMarquee";
 import PromiseMainComponent from "./PromiseMainComponent";
 import Heromain from "./Heromain";
+import Lottery from "./Lottery";
+
 type Props = {};
 let marqueeItems = [
   { image: img1, name: "System Designer" },
@@ -44,7 +46,7 @@ let marqueeItems = [
   { image: img12, name: "UI/UX Engineer" },
 ];
 const Hero = (props: Props) => {
-
+  const cities = ['Bangalore', 'Hyderabad', 'Chennai', 'Mumbai', 'Kolkata', 'Ahmedabad', 'Delhi & NCR', 'Chandigarh', 'Kochi', 'Thiruvananthapuram']
   return (
     <div className="  max-w-[100vw] w-full  z-0 ">
       {/* <Heromain /> */}
@@ -279,42 +281,62 @@ const Hero = (props: Props) => {
       <PromiseMainComponent />
 
 
-      <div className=" select-none scale-[1.4] xs:scale-[1.4] sm:scale-[1.25] md:scale-[1.1]  h-[70vh] !cursor-default">
-        <div role="button" aria-label="animation" tabIndex={0} style={{ width: '100%', height: '100%', overflow: 'hidden', margin: '0px auto', outline: 'none' }} >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 906" width="1440" height="906" preserveAspectRatio="xMidYMid meet" style={{ width: '100%', height: '100%', transform: 'translate3d(0px, 0px, 0px)', contentVisibility: 'visible', }}>
-            <defs>
-              <clipPath id="__lottie_element_116"><rect width="1440" height="906" x="0" y="0"></rect></clipPath>
-              <clipPath id="__lottie_element_127"><path d="M0,0 L841,0 L841,600 L0,600z"></path></clipPath>
-              <clipPath id="__lottie_element_163"><path d="M0,0 L108,0 L108,120 L0,120z"></path></clipPath>
-              <clipPath id="__lottie_element_156"><path d="M0,0 L108,0 L108,120 L0,120z"></path></clipPath>
-              <clipPath id="__lottie_element_149"><path d="M0,0 L108,0 L108,120 L0,120z"></path></clipPath>
-            </defs>
-            <g clip-path="url(#__lottie_element_116)">
-              <g clip-path="url(#__lottie_element_127)" style={{ display: 'block', }} transform="matrix(1,0,0,1,351.5,141)" opacity="1">
-                <g style={{ display: 'block' }} transform="matrix(1,0,0,1,163.9969940185547,26.496999740600586)" opacity="1"><image width="416px" height="415px" preserveAspectRatio="xMidYMid slice" xlinkHref="./circlelotter.png"></image></g>
-                <g style={{ display: 'block' }} transform="matrix(1,0,0,1,762.9990234375,171.49899291992188)" opacity="1"><image width="73px" height="165px" preserveAspectRatio="xMidYMid slice" xlinkHref="./lotterhandle.png"></image></g>
-                <g style={{ display: 'block' }} transform='matrix(1,0,0,1,-0.25,130.75900268554688)' opacity="1"><image width="781px" height="449px" preserveAspectRatio="xMidYMid slice" xlinkHref='./bg-lottie.png'></image></g>
-                <g className="ai" clipPath="url(#__lottie_element_163)" style={{ display: 'block' }} transform="matrix(1,0,0,1,96,225.5)" opacity="1">
-                  <g className="ai animate-number-scale" style={{ display: 'block' }} transform="matrix(1,0,0,1,4,-1032)" opacity="1">
-                    <image width="108px" height="1456px" preserveAspectRatio="xMidYMid slice" href="./numbersscale.png"></image>
-                  </g>
-                </g>
-                <g className="ai" clip-path="url(#__lottie_element_156)" style={{ display: 'block' }} transform="matrix(1,0,0,1,308,225.5)" opacity="1">
-                  <g className="ai animate-number-scale" style={{ display: 'block' }} transform="matrix(1,0,0,1,4,-1032)" opacity="1">
-                    <image width="108px" height="1456px" preserveAspectRatio="xMidYMid slice" href="./numbersscale.png"></image>
-                  </g>
-                </g>
-                <g className="ai" clip-path="url(#__lottie_element_149)" style={{ display: 'block' }} transform="matrix(1,0,0,1,524,225.5)" opacity="1">
-                  <g className="ai animate-number-scale" style={{ display: 'block' }} transform="matrix(1,0,0,1,4,-1032)" opacity="1">
-                    <image width="108px" height="1456px" preserveAspectRatio="xMidYMid slice" href="./numbersscale.png"></image>
-                  </g>
-                </g>
-              </g>
+      {/* lottery */}
 
-            </g>
+      <Lottery />
+
+      {/* cities */}
+
+      <div className="relative bg-primary-brown mt-[50px]">
+        <div className="absolute z-0 h-full w-full overflow-hidden">
+          <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="smallSquareRectangles" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+                {/* <rect x="0" y="0" width="5" height="" fill="none" stroke="#4338CA" stroke-width="0.5" /> */}
+                <rect x="-1" y="-1" width="2" height="2" fill="#50353E" />
+                <rect x="5" y="-1" width="2" height="2" fill="#50353E" />
+                <rect x="-1" y="5" width="2" height="2" fill="#50353E" />
+                <rect x="5" y="5" width="2" height="2" fill="#50353E" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#smallSquareRectangles)" />
           </svg>
+          {/* <Image alt="Background-Image" priority src="https://hyring.com/backgrounds/WhyIndiaBg.svg" fill className='absolute h-full w-full inset-0 object-cover text-transparent -z-10' /> */}
+        </div>
+        <div className="w-screen  relative z-[4] overflow-hidden ">
+          <div className="px-5 pb-8 pt-16 text-center font-cabiet-b text-[36px] leading-[50px]  text-custom-bg-secondary  sm:text-[2.25rem]  md:py-24  md:text-[2.5rem] lg:text-[32px] ">Unlock international career pathways in global tech hubs</div>
+          <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-center gap-[25px] pb-28 xs:px-10 md:pb-40 xl:px-3">
+            {
+              cities.map((city, index) =>
+                <div className='group'>
+                  <button className='group-hover:scale-[1.05] '>
+                    <div className="h-[57px] w-fit  cursor-pointer lg:h-[65px]  relative  ">
+                      <div className="w-fit h-[52px] border border-secondary-color z-[3] lg:h-[62px]  bg-white   rounded-[10px] false  relative z-1 flex items-center justify-center ">
+                        <div className="flex items-center gap-2 pl-3 pr-5 xxs:pl-5 xxs:pr-7 xs:px-10 md:gap-[14px]">
+                          <div className="scale-[0.7] md:scale-[1]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 21 30" className="h-[30px] w-full md:w-[25px] fill-secondary-color group-hover:fill-[#8f465e] group-hover:stroke-[#0e0f0c] ">
+                              <path fill="fill" d="M11.022 0c.649.123 1.309.205 1.946.376 1.766.47 3.295 1.385 4.58 2.7 1.454 1.484 2.38 3.262 2.798 5.31a9.05 9.05 0 0 1-.296 4.696c-.84 2.558-2.061 4.93-3.382 7.248-1.841 3.24-3.885 6.344-6.057 9.366-.29.405-.382.405-.672 0-2.826-3.955-5.478-8.017-7.673-12.371C1.449 15.71.737 14.05.268 12.295-.2 10.546-.016 8.833.523 7.148a10.2 10.2 0 0 1 3.15-4.707A10 10 0 0 1 8.758.117c.255-.04.51-.082.764-.117zM6.603 10.406c-.005 2.042 1.622 3.709 3.637 3.72 2.05.012 3.695-1.637 3.7-3.715.007-2.048-1.644-3.726-3.66-3.732-2.02 0-3.67 1.672-3.677 3.726"></path>
+                            </svg>
+                          </div>
+                          <div className="  font-generalsans-m text-base text-text-primary sm:text-lg lg:text-2xl">{city}</div>
+                        </div>
+                      </div>
+
+                      <div className="w-full h-[52px] lg:h-[62px] group-hover:block hidden  rounded-[10px] bg-[#8f465e]   absolute  " style={{ left: '4px', top: '3px' }}></div>
+                    </div>
+                  </button>
+                </div>
+              )
+            }
+
+
+
+          </div>
+
         </div>
       </div>
+
+
 
     </div>
   );
