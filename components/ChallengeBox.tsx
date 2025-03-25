@@ -118,8 +118,8 @@ const ChallengeBox = (props: Props) => {
   return (
     <div className="w-full rounded-[9px] border-2 border-primary-brown   relative  ">
       <div className="border-3   w-full !justify-start  bg-white   rounded-[9px] border-primary-brown flex   items-center relative z-1 ">
-        <div className="w-full  p-5 md:p-10">
-          <div className="flex flex-wrap-reverse  max-w-[1250px] w-full items-start justify-between gap-2  px-0 md:flex-nowrap   ">
+        <div className="w-full max-w-[1120px]  p-5 md:p-10">
+          <div className="flex flex-wrap-reverse   w-full items-start justify-between gap-2  px-0 md:flex-nowrap   ">
             <div className="flex flex-col gap-2">
               <div className="flex flex-col font-cabiet-b text-primary-brown text-3xl   md:text-5xl">
                 <h2 className="text-[28px] leading-[40px]">

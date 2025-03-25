@@ -26,10 +26,10 @@ const NormalPricingCard = (props: Props) => {
           props.className
         )}
       >
-        <div className="flex h-full w-full bg-image-square flex-col items-center justify-center gap-4 px-7 py-7 font-primaryMedium   md:items-start lg:py-11 lg:pl-11 lg:pr-6">
+        <div className="flex h-full w-full bg-image-square flex-col items-center justify-center gap-4 px-7 py-7 font-primaryMedium   md:items-start lg:py-11 lg:px-8 ">
           <div className="text-medium font-medium  font-generalsans-m font-text-primary-brown  text-lg md:text-2xl leading-[70px]  ">
-           <h1 className="leading-[50px]"> 
-             {props.title}
+            <h1 className="leading-[30px] lg:leading-[50px]">
+              {props.title}
             </h1>
           </div>
         </div>

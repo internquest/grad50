@@ -13,7 +13,7 @@ const StarText = (props: Props) => {
     <div
       className="font-generalsans-m  undefined  md:whitespace-nowrap
                   text-base sm:text-[14px] md:text-[17px] lg:text-[16px]   
-                  xl:text-[17px] 2xl:text-[20px]   flex items-start justify-start gap-3 my-3 md:my-5 xl:my-8"
+                  xl:text-[17px] 2xl:text-[20px] first:mt-3 md:first:mt-5  xl:first:mt-7   flex items-start justify-start gap-3 "
     >
       <div className=" h-[20px] w-[20px] relative">
         <Image

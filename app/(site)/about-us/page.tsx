@@ -82,6 +82,9 @@ startups creating a new future "
           </div> */}
         </div>
       </div>
+
+
+
       <div className="z-20   flex min-h-[500px] w-full  flex-col justify-center flex-wrap font-primary lg:flex-row md:flex-nowrap">
         <div className="w-full lg:w-1/2 bg-[#462B34] flex items-center">
           <div className="flex min-h-[250px] flex-1 flex-col max-w-[640px] mx-auto items-start   p-5 text-[#FAFAFA]  md:p-14 justify-center">
@@ -134,7 +137,7 @@ startups creating a new future "
       </div>
 
       <div className="w-full px-1 sm:px-10  h-full">
-        <div className="max-w-[1330px] mx-auto">
+        <div className="max-w-[1120px] mx-auto">
 
           <ExclusiveMembetAbout />
         </div>
