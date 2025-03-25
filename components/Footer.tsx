@@ -16,7 +16,7 @@ const Footer = (props: Props) => {
   return (
     <div className="relative my-10 z-0">
       {/* there is another dive to applied here */}
-      <div className="my-10 flex flex-col gap-5 px-10 font-generalsans-r md:hidden">
+      <div className="my-10 flex flex-col gap-5 px-7 md:px-10 font-generalsans-r md:hidden">
         <FootarCard heading=" I&apos;m a Job Seeker, Let&apos;s work together!" className="bg-custom-green" />
         <FootarCard subheading="Open access for overseas companies" heading=" I&apos;m an Employer, Let's talk business!" className="bg-custom-blue" />
 

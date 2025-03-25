@@ -59,14 +59,14 @@ const PromiseMainComponent = (props: Props) => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="xl:mb-10  flex h-full z-50  justify-evenly min-h-[500px]  flex-col items-center  lg:mt-0 lg:min-h-[700px]   ">
+    <div className="mb-10 mt-10  flex h-full z-50  justify-evenly min-h-[450px] md:min-h-[500px]  flex-col items-center  lg:mt-0 lg:min-h-[700px]   ">
       <div className=" font-cabiet-b  text-start  flex  text-[2rem] text-primary-brown sm:text-[2.25rem] md:text-[2.5rem]  lg:text-5xl">
         Our Promises
       </div>
 
-      <div className="w-full  flex min-h-[500px] flex-col md:flex-row  md:overflow-hidden  justify-center ">
+      <div className="w-full  flex  md:min-h-[500px] flex-col md:flex-row  md:overflow-hidden  justify-center ">
         <div className="flex-col md:flex-row justify-center flex items-center w-full h-full">
-          <div className="max-w-screen-lg relative h-[450px] flex basis-auto md:basis-[1/2] lg:basis-3/5  left-0 w-full">
+          <div className="max-w-screen-lg relative h-[390px] md:h-[450px] flex basis-auto md:basis-[1/2] lg:basis-3/5  left-0 w-full">
             {slides.map((slide, index) => (
               <div
                 key={index}

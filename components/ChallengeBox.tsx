@@ -212,7 +212,7 @@ const ChallengeBox = (props: Props) => {
           </div> */}
         </div>
       </div>
-      <div className="w-full h-full lg:h-full  rounded-[9px] bg-primary-brown border-3 border-white  top-2 left-[10px] -z-10  absolute  "></div>
+      <div className="w-full h-full lg:h-full  rounded-[9px] bg-primary-brown border-3 border-white  top-2 left-[4px] md:left-[10px] -z-10  absolute  "></div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div className="w-full h-full  text-primary-brown relative flex flex-col gap-10   ">
-      <div className="mx-auto px-5 flex flex-col gap-20 my-0 w-full max-w-[1800px]">
+      <div className="mx-auto px-1 md:px-5 flex flex-col gap-20 my-0 w-full max-w-[1800px]">
         <div className="flex flex-col items-center gap-5">
           <div className=" mt-10 text-center font-cabiet-r  font-[700] text-[40px]  lg:mt-[40px] lg:text-[58px]  ">
             Introducing
@@ -38,7 +38,7 @@ const page = (props: Props) => {
             Grad50 is creating a new path for students aiming for top 0.01%
             opportunities
           </p>
-          <p className="  text-center font-generalsans-r  text-2xl leading-[40px] lg:leading-[62px] font-[500] w-full md:w-3/5 lg:text-[28px] lg:font-normal ">
+          <p className="  text-center font-generalsans-r  text-[20px] leading-[40px] lg:leading-[62px] font-[500] w-full md:w-3/5 lg:text-[28px] lg:font-normal ">
             Have you ever dreamt of landing those dream opportunities that make
             headlines? You know, the ones where an IIT or NIT student bags a
             whopping{" "}
@@ -49,7 +49,7 @@ const page = (props: Props) => {
           </p>
         </div>
         <div className="flex flex-col gap-5 w-full h-full relative justify-center ">
-          <div className="mx-auto px-1 sm:px-10">
+          <div className="mx-auto  sm:px-10">
             <ChallengeBox />
           </div>
           <div className="my-5 mx-auto flex flex-col w-full justify-center items-center px-5">
@@ -133,7 +133,7 @@ startups creating a new future "
         </div>
       </div>
 
-      <div className="w-full px-5 sm:px-10  h-full">
+      <div className="w-full px-1 sm:px-10  h-full">
         <div className="max-w-[1330px] mx-auto">
 
           <ExclusiveMembetAbout />

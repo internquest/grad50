@@ -52,8 +52,8 @@ const Hero = (props: Props) => {
       {/* <Heromain /> */}
       <div className="w-[100vw]  mt-3 md:mt-14 ">
         <div className="mx-auto  mb-3 md:mb-20 w-full ">
-          <div className="mx-auto my-0 flex pl-6 pr-3 md:pr-0 lg:pl-[60px] xl:pl-[80px] gap-8 max-w-[1800px] flex-col md:flex-row">
-            <div className="w-full md:w-[45%] flex justify-start items-center flex-col mt-6 ">
+          <div className="mx-auto my-0 flex  md:pr-0 lg:pl-[60px] xl:pl-[80px] gap-8 max-w-[1800px] flex-col md:flex-row">
+            <div className="w-full md:w-[45%] flex pl-6 pr-3 justify-start items-center flex-col mt-6 ">
               <div className="">
                 <h1 className=" text-primary-brown  max-w-[401px] font-cabiet-b text-4xl  text-start  w-full lg:text-[48px] !leading-[1.7]  pt-6 tracking-[-.01em]">
                   Meet the new<p className="relative mx-2 inline-block lg:mx-3">
@@ -83,7 +83,7 @@ const Hero = (props: Props) => {
             </div>
 
             {/* leaving the space to put the animation down */}
-            <div className=" bg-green  flex w-full md:w-[55%] items-center self-end  justify-center  ">
+            <div className=" bg-green  flex w-full md:w-[55%] md:pl-6 md:pr-3 mb-5 md:mb-0 items-center self-end  justify-center  ">
               <div className="relative w-full ">
                 <div className="h-full w-full">
                   <div
@@ -97,12 +97,12 @@ const Hero = (props: Props) => {
                       margin: "0px auto",
                       outline: "none",
                     }}
-                    className=" flex justify-center md:block"
+                    className=" flex justify-center  md:block"
                   >
                     {/* <div className="  w-full h-full"> */}
                     <Image
                       src='https://ik.imagekit.io/ysp4xwrz9/g50/Group%2018-min.svg'
-                      className=" md:hidden "
+                      className=" min-w-[450px] md:hidden "
                       width={450}
                       height={450}
                       alt="image"
