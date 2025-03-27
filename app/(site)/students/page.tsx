@@ -59,9 +59,9 @@ const page = (props: Props) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 w-full h-full relative justify-center ">
+        <div className="flex  gap-5 w-full h-full relative justify-center ">
           <div className="mx-auto relative w-full flex flex-col gap-10 px-4 sm:px-10">
-            <div className="lg:flex-row flex-col flex max-w-[1200px] mx-auto w-full h-full gap-10 relative">
+            <div className="lg:flex-row flex-col flex max-w-[1200px] mx-auto   gap-10 relative">
               <NormalPricingCard
                 className=" max-lg:w-full"
                 title="If this sounds like a page
@@ -72,8 +72,8 @@ const page = (props: Props) => {
               />
               {/* <div className="flex flex-col w-full bg-white"> */}
 
-              <div className="w-full  rounded-[9px] border-2 border-primary-brown   relative  ">
-                <div className="border-3   p-2  w-full  h-full  bg-white   rounded-[9px] border-primary-brown  flex flex-col md:pl-3 lg:pl-10 relative  [&>div]:mb-3 md:mt-0 md:[&>div]:mb-5  xl:[&>div]:mb-7  z-10 ">
+              <div className="w-min bg-white rounded-[9px] pr-20 border-2 border-primary-brown   relative  ">
+                <div className="border-3   p-2  w-min  h-full     rounded-[9px] border-primary-brown  flex flex-col md:pl-3 lg:pl-10 relative  [&>div]:mb-3 md:mt-0 md:[&>div]:mb-5  xl:[&>div]:mb-7  z-10 ">
                   <StarText text="Shipped projects with high adoption" />
                   <StarText text="Won awards, hackathons, competitions or scholarships" />
                   <StarText text="Built communities/ large audience on social media platforms" />
