@@ -3,7 +3,61 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ModalProvider from "@/provider/ModalProvider";
 import Footer from "@/components/Footer";
-const inter = Inter({ subsets: ["latin"] });
+import localFont from 'next/font/local';
+
+
+
+const WhyteInktrapBold = localFont({
+  src: '../static/fonts/WhyteInktrap-Bold.woff',
+  display: 'swap',
+  variable: '--font-whyteinktrap-bold',
+});
+const WhyteInktrapMedium = localFont({
+  src: '../static/fonts/WhyteInktrap-Medium.woff2',
+  display: 'swap',
+  variable: '--font-whyteinktrap-medium',
+});
+const WhyteInktrapRegular = localFont({
+  src: '../static/fonts/WhyteInktrap-Regular.woff2',
+  display: 'swap',
+  variable: '--font-whyteinktrap-regular',
+})
+const cabinetBold = localFont({
+  src: '../static/fonts/CabinetGrotesk-Bold.woff2',
+  display: 'swap',
+  variable: '--font-cabinet-bold',
+})
+const cabinetblack = localFont({
+  src: '../static/fonts/CabinetGrotesk-Black.ttf',
+  display: 'swap',
+  variable: '--font-cabinet-black',
+})
+const cabinetMedium = localFont({
+  src: '../static/fonts/CabinetGrotesk-Medium.woff2',
+  display: 'swap',
+  variable: '--font-cabinet-medium',
+})
+const cabinetRegular = localFont({
+  src: '../static/fonts/CabinetGrotesk-Regular.woff2',
+  display: 'swap',
+  variable: '--font-cabinet-regular',
+})
+const GeneralSansBold = localFont({
+  src: '../static/fonts/GeneralSans-Bold.woff2',
+  display: 'swap',
+  variable: '--font-generalsans-bold',
+})
+const GeneralSansMedium = localFont({
+  src: '../static/fonts/GeneralSans-Medium.woff2',
+  display: 'swap',
+  variable: '--font-generalsans-medium',
+})
+const GeneralSansRegular = localFont({
+  src: '../static/fonts/GeneralSans-Regular.woff2',
+  display: 'swap',
+  variable: '--font-generalsans-regular',
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +71,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={` font-generalsans-m bg-image`}>
+      <body className={`${cabinetblack.variable} ${cabinetBold.variable} ${cabinetMedium.variable} ${cabinetRegular.variable} ${GeneralSansBold.variable} ${GeneralSansMedium.variable} ${GeneralSansRegular.variable} ${WhyteInktrapBold.variable} ${WhyteInktrapMedium.variable} ${WhyteInktrapRegular.variable}`}>
         <ModalProvider />
 
         {children}

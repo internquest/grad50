@@ -72,8 +72,8 @@ const page = (props: Props) => {
               />
               {/* <div className="flex flex-col w-full bg-white"> */}
 
-              <div className="w-min bg-white rounded-[9px] pr-20 border-2 border-primary-brown   relative  ">
-                <div className="border-3   p-2  w-min  h-full     rounded-[9px] border-primary-brown  flex flex-col md:pl-3 lg:pl-10 relative  [&>div]:mb-3 md:mt-0 md:[&>div]:mb-5  xl:[&>div]:mb-7  z-10 ">
+              <div className="w-full lg:w-min bg-white rounded-[9px] pr-5 md:pr-20 border-2 border-primary-brown   relative  ">
+                <div className="border-3   p-2 w-full md:w-min  h-full     rounded-[9px] border-primary-brown  flex flex-col md:pl-8 lg:pl-10 relative  [&>div]:mb-3 md:mt-0 md:[&>div]:mb-5  xl:[&>div]:mb-7  z-10 ">
                   <StarText text="Shipped projects with high adoption" />
                   <StarText text="Won awards, hackathons, competitions or scholarships" />
                   <StarText text="Built communities/ large audience on social media platforms" />
